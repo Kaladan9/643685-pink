@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-img" src="#" alt="Pink">
+    </a>
+    <button class="page-header__toggle" type="button">
+      Открыть меню
+    </button>
+    <button class="page-header__close" type="button">
+      Закрыть меню
+    </button>
+  </div>
+
+  <nav class="main-nav">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <p class="page-header__slogan">Фотографии пользователей</p>
+</header>
+
+<main class="page-main">
+  <div class="page-main__wrapper">
+    <h2 class="visually-hidden">Фотографии пользователей</h2>
+
+    <section class="photos">
+      <h3 class="photos__title">
+        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </h3>
+
+      <ul class="photos__list">
+
+        <li class="photos__item">
+          <img class="photos__img photos__img--first" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Анна</b>
+            <p class="photos__time">(5 минут назад)</p>
+          </div>
+          <p class="photos__comment">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите первую
+            трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 215</p>
+          </div>
+        </li>
+
+        <li class="photos__item">
+          <img class="photos__img" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Левон</b>
+            <p class="photos__time">(5 часов назад)</p>
+          </div>
+          <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 356</p>
+          </div>
+        </li>
+
+        <li class="photos__item">
+          <img class="photos__img" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Антон</b>
+            <p class="photos__time">(12 часов назад)</p>
+          </div>
+          <p class="photos__comment">Соседи будут рады!</p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 666</p>
+          </div>
+        </li>
+
+        <li class="photos__item">
+          <img class="photos__img" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Борис</b>
+            <p class="photos__time">(20 часов назад)</p>
+          </div>
+          <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 215</p>
+          </div>
+        </li>
+
+        <li class="photos__item">
+          <img class="photos__img" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Сергей</b>
+            <p class="photos__time">(25 часов назад)</p>
+          </div>
+          <p class="photos__comment">Самая кубанская в мире!</p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 4</p>
+          </div>
+        </li>
+
+        <li class="photos__item">
+          <img class="photos__img" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Максим</b>
+            <p class="photos__time">(40 часов назад)</p>
+          </div>
+          <p class="photos__comment">Где снег-то?</p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 150</p>
+          </div>
+        </li>
+
+        <li class="photos__item">
+          <img class="photos__img" src="#" alt="Фото пользователя">
+          <div class="photos__user-info">
+            <b class="photos__user-name">Надежда</b>
+            <p class="photos__time">(45 часов назад)</p>
+          </div>
+          <p class="photos__comment">Всем GM и взаимные лайки!</p>
+          <div class="photos__social social">
+            <img class="social__like" src="#">
+            <p class="social__count">Нравится: 2560</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="user-photo">
+      <h2 class="visually-hidden">Загрузка своего фото</h2>
+
+      <h3 class="user-photo__title">
+        Затмите их всех!
+        <br>
+        Выкладывайте все, что накопилось в телефоне!
+      </h3>
+      <img class="user-photo__img" src="#" alt="Фото пользователя">
+
+      <div class="user-photo__tools">
+        <img class="tools__img tools__img--crop" src="#" alt="Обрезать">
+        <img class="tools__img tools__img--contrast" src="#" alt="Контраст">
+        <img class="tools__img tools__img--fill" src="#" alt="Заливка">
+      </div>
+
+      <div class="user-photo__control control">
+        <div class="control__bar"></div>
+        <div class="control__pin"></div>
+      </div>
+
+      <button type="button" class="user-photo__post button button--round button--pink">Запостить</button>
+      <button type="button" class="user-photo__cancel button button--round button--grey">Отмена</button>
+    </section>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+
+    <a class="page-footer__link" href="#">
+      <img class="page-footer__logo" src="#" alt="Pink">
+    </a>
+
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            Twitter
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            Facebook
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            Youtube
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-footer__developer developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="#">
+        <img class="developer__logo" src="#" alt="HTML Academy">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
