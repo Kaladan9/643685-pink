@@ -8,7 +8,7 @@
 <body>
 
 <header class="page-header">
-  <div class="page-header__wrapper">
+  <div class="wrapper">
     <a class="page-header__logo" href="#">
       <img class="page-header__logo-img" src="#" alt="Pink">
     </a>
@@ -18,10 +18,8 @@
     <button class="page-header__close" type="button">
       Закрыть меню
     </button>
-  </div>
 
-  <nav class="main-nav">
-    <div class="main-nav__wrapper">
+    <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="#">Главная</a>
@@ -36,14 +34,12 @@
           <a class="site-list__link" href="#">HTML Academy</a>
         </li>
       </ul>
-    </div>
-  </nav>
-
-  <img class="page-header__preview-img" src="#" alt="Фото телефона">
+    </nav>
+  </div>
 </header>
 
-<main class="page-main">
-  <div class="page-main__wrapper">
+<main class="page-main main__bg">
+  <div class="wrapper">
     <h1 class="visually-hidden">Pink - расскрасьте серые будни в розовый цвет</h1>
 
     <section class="app">
@@ -67,36 +63,32 @@
     </section>
 
     <section class="description">
-      <div class="description__wrapper">
-        <h2 class="visually-hidden">Описание приложения</h2>
-        <p class="description__message">Устали от серости мегаполиса?</p>
-        <p class="description__message">Нам есть, что вам предложить!</p>
+      <h2 class="visually-hidden">Описание приложения</h2>
+      <p class="description__message">Устали от серости мегаполиса?</p>
+      <p class="description__message">Нам есть, что вам предложить!</p>
 
-        <ul class="description__list">
-          <li class="description__item">
-            <h3 class="description__title">Поднимает настроение</h3>
-            <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько
-              кликов</p>
-          </li>
-          <li>
-            <h3 class="description__title">Меняет мир вокруг</h3>
-            <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-              эффект</p>
-          </li>
-          <li>
-            <h3 class="description__title">Заводит новых друзей</h3>
-            <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-              новых</p>
-          </li>
-        </ul>
-
-        <img class="description__image" src="#" alt="Всем привет">
-      </div>
+      <ul class="description__list">
+        <li class="description__item">
+          <h3 class="description__title">Поднимает настроение</h3>
+          <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько
+            кликов</p>
+        </li>
+        <li>
+          <h3 class="description__title">Меняет мир вокруг</h3>
+          <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li>
+          <h3 class="description__title">Заводит новых друзей</h3>
+          <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
     </section>
 
     <section class="feedback">
-      <div class="feedback__wrapper slider">
+      <div class="slider">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
 
         <ul class="feedback__list slider__list">
@@ -126,89 +118,87 @@
     </section>
 
     <section class="subscribe">
-      <div class="subscribe__wrapper">
-        <h2 class="visually-hidden">Подписка</h2>
+      <h2 class="visually-hidden">Подписка</h2>
 
-        <ul class="subscribe__list slider__list">
-          <li class="subscribe__item slider__item">
-            <header class="subscribe__header">
-              <h3 class="subscribe__title">Стандарт</h3>
-              <p class="subscribe__cost">3,99 USD</p>
-            </header>
+      <ul class="subscribe__list slider__list">
+        <li class="subscribe__item slider__item">
+          <header class="subscribe__header">
+            <h3 class="subscribe__title">Стандарт</h3>
+            <p class="subscribe__cost">3,99 USD</p>
+          </header>
 
-            <ul class="subscribe__options options__list">
-              <li class="options__item">
-                <p class="options__name">Розовый цвет</p>
-                <img class="options__img" src="#" alt="Есть">
-              </li>
-              <li class="options__item">
-                <p class="options__name">Смайлики</p>
-                <img class="options__img" src="#" alt="Есть">
-              </li>
-              <li class="options__item">
-                <p class="options__name">Комментарии</p>
-                <img class="options__img" src="#" alt="Нет">
-              </li>
-            </ul>
-          </li>
+          <ul class="subscribe__options options__list">
+            <li class="options__item">
+              <p class="options__name">Розовый цвет</p>
+              <img class="options__img" src="#" alt="Есть">
+            </li>
+            <li class="options__item">
+              <p class="options__name">Смайлики</p>
+              <img class="options__img" src="#" alt="Есть">
+            </li>
+            <li class="options__item">
+              <p class="options__name">Комментарии</p>
+              <img class="options__img" src="#" alt="Нет">
+            </li>
+          </ul>
+        </li>
 
-          <li class="subscribe__item slider__item">
-            <header class="subscribe__header">
-              <h3 class="subscribe__title">Стандарт</h3>
-              <p class="subscribe__cost">3,99 USD</p>
-            </header>
+        <li class="subscribe__item slider__item">
+          <header class="subscribe__header">
+            <h3 class="subscribe__title">Стандарт</h3>
+            <p class="subscribe__cost">3,99 USD</p>
+          </header>
 
-            <ul class="subscribe__options options__list">
-              <li class="options__item">
-                <p class="options__name">Розовый цвет</p>
-                <img class="options__img" src="#" alt="Есть">
-              </li>
-              <li class="options__item">
-                <p class="options__name">Смайлики</p>
-                <img class="options__img" src="#" alt="Есть">
-              </li>
-              <li class="options__item">
-                <p class="options__name">Комментарии</p>
-                <img class="options__img" src="#" alt="Нет">
-              </li>
-            </ul>
-          </li>
+          <ul class="subscribe__options options__list">
+            <li class="options__item">
+              <p class="options__name">Розовый цвет</p>
+              <img class="options__img" src="#" alt="Есть">
+            </li>
+            <li class="options__item">
+              <p class="options__name">Смайлики</p>
+              <img class="options__img" src="#" alt="Есть">
+            </li>
+            <li class="options__item">
+              <p class="options__name">Комментарии</p>
+              <img class="options__img" src="#" alt="Нет">
+            </li>
+          </ul>
+        </li>
 
-          <li class="subscribe__item slider__item">
-            <header class="subscribe__header">
-              <h3 class="subscribe__title">Стандарт</h3>
-              <p class="subscribe__cost">3,99 USD</p>
-            </header>
+        <li class="subscribe__item slider__item">
+          <header class="subscribe__header">
+            <h3 class="subscribe__title">Стандарт</h3>
+            <p class="subscribe__cost">3,99 USD</p>
+          </header>
 
-            <ul class="subscribe__options options__list">
-              <li class="options__item">
-                <p class="options__name">Розовый цвет</p>
-                <img class="options__img" src="#" alt="Есть">
-              </li>
-              <li class="options__item">
-                <p class="options__name">Смайлики</p>
-                <img class="options__img" src="#" alt="Есть">
-              </li>
-              <li class="options__item">
-                <p class="options__name">Комментарии</p>
-                <img class="options__img" src="#" alt="Нет">
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="subscribe__options options__list">
+            <li class="options__item">
+              <p class="options__name">Розовый цвет</p>
+              <img class="options__img" src="#" alt="Есть">
+            </li>
+            <li class="options__item">
+              <p class="options__name">Смайлики</p>
+              <img class="options__img" src="#" alt="Есть">
+            </li>
+            <li class="options__item">
+              <p class="options__name">Комментарии</p>
+              <img class="options__img" src="#" alt="Нет">
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-        <div class="subscribe__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle">2</button>
-          <button class="slider__toggle">3</button>
-        </div>
+      <div class="subscribe__toggles slider__toggles">
+        <button class="slider__toggle">1</button>
+        <button class="slider__toggle">2</button>
+        <button class="slider__toggle">3</button>
       </div>
     </section>
   </div>
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="wrapper">
     <h2 class="visually-hidden">Контакты</h2>
 
     <section class="page-footer__contacts contacts">
