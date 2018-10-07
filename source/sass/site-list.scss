@@ -1,0 +1,19 @@
+.site-list {
+  list-style: none;
+  text-align: center;
+}
+
+.site-list__item {
+  min-height: 64px;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.site-list__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 66px;
+}

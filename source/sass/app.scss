@@ -1,0 +1,21 @@
+.app {
+  padding-top: 26px;
+  background-color: #1d2631;
+  text-align: center;
+}
+
+.app__list {
+  padding: 0;
+  list-style: none;
+}
+
+.app__link {
+  font-size: 0;
+}
+
+.app__description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}

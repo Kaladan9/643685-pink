@@ -1,0 +1,22 @@
+.options {
+  padding: 0;
+  list-style: none;
+}
+
+.options__item {
+  border-bottom: 2px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options__name {
+  text-transform: uppercase;
+  color: #283645;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.options__img {
+  margin-right: 25px;
+}

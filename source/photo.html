@@ -3,54 +3,59 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header class="page-header">
-  <div class="wrapper">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-img" src="#" alt="Pink">
+  <div class="page-header__wrapper wrapper">
+    <a class="page-header__logo">
+      <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
     </a>
-    <button class="page-header__toggle" type="button">
-      Открыть меню
+    <button class="page-header__button" type="button">
+      <img class="page-header__toggle" src="img/icon-menu-burger.svg" alt="Открыть меню" width="50px" height="24px">
     </button>
-    <button class="page-header__close" type="button">
-      Закрыть меню
+    <button class="page-header__button" type="button">
+      <img class="page-header__toggle" src="img/icon-menu-cross.svg" alt="Закрыть меню" width="24px" height="23px">
     </button>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
   </div>
+
+  <nav class="main-nav">
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Фотографии</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Конкурс</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <main class="page-main">
-  <div class="wrapper">
-    <h1 class="page-main__slogan">Фотографии пользователей</h1>
 
-    <section class="photos">
+    <div class="page-main__preview page-main__preview--short">
+      <h1 class="page-main__slogan">Фотографии пользователей</h1>
+    </div>
+
+    <section class="photos wrapper">
       <h2 class="photos__title">
-        Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        Взгляните на фотографии, которые выкладывают пользователи!
+        <br>
+        Видите, как не хватает ваших?
       </h2>
 
       <ul class="photos__list">
 
         <li class="photos__item">
-          <img class="photos__img photos__img--first" src="#" alt="Фото пользователя">
+          <img class="photos__img photos__img--first" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Анна</b>
             <p class="photos__time">(5 минут назад)</p>
@@ -59,87 +64,87 @@
             Прыгать или нет? Напишите в коментарии свой совет и смотрите первую
             трансляцию в перископе, задавайте свои вопросы!
           </p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 215</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 215</p>
           </div>
         </li>
 
         <li class="photos__item">
-          <img class="photos__img" src="#" alt="Фото пользователя">
+          <img class="photos__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Левон</b>
             <p class="photos__time">(5 часов назад)</p>
           </div>
           <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 356</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 356</p>
           </div>
         </li>
 
         <li class="photos__item">
-          <img class="photos__img" src="#" alt="Фото пользователя">
+          <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Антон</b>
             <p class="photos__time">(12 часов назад)</p>
           </div>
           <p class="photos__comment">Соседи будут рады!</p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 666</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 666</p>
           </div>
         </li>
 
         <li class="photos__item">
-          <img class="photos__img" src="#" alt="Фото пользователя">
+          <img class="photos__img" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Борис</b>
             <p class="photos__time">(20 часов назад)</p>
           </div>
           <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 215</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 215</p>
           </div>
         </li>
 
         <li class="photos__item">
-          <img class="photos__img" src="#" alt="Фото пользователя">
+          <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Сергей</b>
             <p class="photos__time">(25 часов назад)</p>
           </div>
           <p class="photos__comment">Самая кубанская в мире!</p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 4</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 4</p>
           </div>
         </li>
 
         <li class="photos__item">
-          <img class="photos__img" src="#" alt="Фото пользователя">
+          <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Максим</b>
             <p class="photos__time">(40 часов назад)</p>
           </div>
           <p class="photos__comment">Где снег-то?</p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 150</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 150</p>
           </div>
         </li>
 
         <li class="photos__item">
-          <img class="photos__img" src="#" alt="Фото пользователя">
+          <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
           <div class="photos__user-info">
             <b class="photos__user-name">Надежда</b>
             <p class="photos__time">(45 часов назад)</p>
           </div>
           <p class="photos__comment">Всем GM и взаимные лайки!</p>
-          <div class="photos__social social">
-            <img class="social__like" src="#">
-            <p class="social__count">Нравится: 2560</p>
+          <div class="photos__social">
+            <img class="photos__like" src="img/icon-heart.svg">
+            <p class="photos__count">Нравится: 2560</p>
           </div>
         </li>
       </ul>
@@ -153,12 +158,18 @@
         <br>
         Выкладывайте все, что накопилось в телефоне!
       </h3>
-      <img class="user-photo__img" src="#" alt="Фото пользователя">
+      <img class="user-photo__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя">
 
       <div class="user-photo__tools tools">
-        <button type="button" class="tools__btn tools__btn--crop">Обрезать</button>
-        <button type="button" class="tools__btn tools__btn--contrast">Контраст</button>
-        <button type="button" class="tools__btn tools__btn--fill">Заливка</button>
+        <button type="button" class="tools__btn tools__btn--crop">
+          <img class="page-header__toggle" src="img/icon-editor-crop.svg" alt="Обрезать" width="44px" height="44px">
+        </button>
+        <button type="button" class="tools__btn tools__btn--contrast">
+          <img class="page-header__toggle" src="img/icon-editor-fill.svg" alt="Заливка" width="48px" height="43px">
+        </button>
+        <button type="button" class="tools__btn tools__btn--fill">
+          <img class="page-header__toggle" src="img/icon-editor-contrast.svg" alt="Контраст" width="32px" height="32px">
+        </button>
 
         <div class="tools__control control">
           <div class="control__bar"></div>
@@ -166,35 +177,34 @@
         </div>
       </div>
 
-      <button type="button" class="user-photo__post button button--round button--pink">Запостить</button>
-      <button type="button" class="user-photo__cancel button button--round button--grey">Отмена</button>
+      <button type="button" class="user-photo__post button button--round button--pink button--transparent">Запостить</button>
+      <button type="button" class="user-photo__cancel button button--round button--grey button--transparent">Отмена</button>
     </section>
 
-  </div>
 </main>
 
 <footer class="page-footer">
   <div class="wrapper">
 
     <a class="page-footer__link" href="#">
-      <img class="page-footer__logo" src="#" alt="Pink">
+      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Pink" width="147px" height="40px">
     </a>
 
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
-            Twitter
+            <img class="app__img" src="img/icon-twitter.svg" alt="Twitter" width="18px" height="14px">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
-            Facebook
+            <img class="app__img" src="img/icon-facebook.svg" alt="Facebook" width="9px" height="18px">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
-            Youtube
+            <img class="app__img" src="img/icon-youtube.svg" alt="Youtube" width="15px" height="13px">
           </a>
         </li>
       </ul>
@@ -203,7 +213,7 @@
     <div class="page-footer__developer developer">
       <p class="developer__text">Разработано</p>
       <a class="developer__link" href="#">
-        <img class="developer__logo" src="#" alt="HTML Academy">
+        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="27px" height="34px">
       </a>
     </div>
   </div>

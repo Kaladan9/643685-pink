@@ -1,0 +1,38 @@
+.description {
+  padding-top: 20px;
+  min-height: 217px;
+  text-align: center;
+  background-color: $bg-color;
+}
+
+.description__message {
+  color: #283645;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.description__list {
+  padding: 40px 0 320px;
+  list-style: none;
+  color: #1d2631;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.description__title {
+  margin: 10px 0;
+  padding: 0 20px;
+  font-weight: 700;
+}
+
+.description__text {
+  margin: 0 0 10px;
+  padding: 0 34px;
+}
+
+.description__bg {
+  background: url("../img/iphone-screen-mobile@1x.png") center bottom no-repeat;
+  background-position-y: 111%;
+}

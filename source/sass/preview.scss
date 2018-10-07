@@ -1,0 +1,9 @@
+.preview__bg {
+  &::after {
+    content: url("../img/iphone-hand-mobile@1x.png");
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
