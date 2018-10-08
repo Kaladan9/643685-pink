@@ -1,0 +1,28 @@
+.page-main {
+  @include container();
+}
+
+.page-main__preview {
+  width: 100%;
+  background: url("../img/bg-back-mobile@1x.jpg") center top no-repeat;
+  min-height: 426px;
+  z-index: -1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--short {
+    min-height: 235px;
+  }
+}
+
+.page-main__slogan {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 0 20px;
+}

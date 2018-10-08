@@ -1,0 +1,30 @@
+.subscribe {
+  padding-top: 26px;
+  background-color: $bg-color;
+}
+
+.subscribe__list {
+  border: 2px solid #e5e5e5;
+  padding: 0;
+  list-style: none;
+  width: 280px;
+}
+
+.subscribe__header {
+  padding: 24px 0;
+  background-color: #283645;
+  color: white;
+  text-align: center;
+}
+
+.subscribe__title {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.subscribe__cost {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 300;
+}

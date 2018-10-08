@@ -1,0 +1,18 @@
+.page-header {
+  @include container();
+  min-height: 70px;
+}
+
+.page-header__wrapper {
+  padding: 21px 19px;
+  background-color: #283645;
+  border-bottom: 1px solid #000000;
+}
+
+.page-header__button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+}

@@ -1,0 +1,18 @@
+.page-popup {
+  @include container;
+  text-align: center;
+  line-height: 24px;
+  padding: 48px 0;
+}
+
+
+.page-popup__text {
+  padding: 0 10px;
+}
+
+.page-popup__button-box {
+  background-color: $bg-color;
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+}

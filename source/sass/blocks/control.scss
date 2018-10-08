@@ -1,0 +1,22 @@
+.control {
+  margin: 30px 0;
+  position: relative;
+}
+
+.control__bar {
+  margin: 0 auto;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+}
+
+.control__pin {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 80%;
+  width: 14px;
+  height: 14px;
+  background: $bg-color;
+  border-radius: 50%;
+  border: 2px solid #d22957;
+}

@@ -1,0 +1,23 @@
+.feedback {
+  padding-top: 26px;
+  text-align: center;
+}
+
+.feedback__list {
+  padding: 0;
+  list-style: none;
+  color: #1d2631;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.feedback__name {
+  margin: 10px 0;
+  padding: 0 20px;
+  font-weight: 700;
+}
+
+.feedback__message {
+  margin: 0 0 10px;
+  padding: 0 15px;
+}

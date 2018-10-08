@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+
+  &--round {
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--green {
+    border: none;
+    text-transform: uppercase;
+    background-color: #2aab6d;
+  }
+
+  &--pink {
+    color: #d22856;
+    border: 3px solid #d22856;
+  }
+
+  &--grey {
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+  }
+}
