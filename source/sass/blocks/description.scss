@@ -3,6 +3,10 @@
   min-height: 217px;
   text-align: center;
   background-color: $bg-color;
+
+  @media #{$tablet-widths} {
+    padding-top: 40px;
+  }
 }
 
 .description__message {
@@ -11,6 +15,10 @@
   line-height: 32px;
   font-weight: 300;
   margin: 20px 0;
+
+  @media #{$tablet-widths} {
+    margin: 0;
+  }
 }
 
 .description__list {
@@ -19,20 +27,86 @@
   color: #1d2631;
   font-size: 14px;
   line-height: 18px;
+
+  @media #{$tablet-widths} {
+    padding: 180px 0 40px 320px;
+    text-align: left;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    padding: 0 0 40px;
+    font-size: 18px;
+  }
+}
+
+.description__item {
+  &:nth-child(1) {
+    @media #{$desktop-widths} {
+      background: url("../img/iphone-screen-1-desktop@1x.png") center top no-repeat;
+    }
+  }
+
+  &:nth-child(2) {
+    @media #{$desktop-widths} {
+      background: url("../img/iphone-screen-2-desktop@1x.png") center top no-repeat;
+    }
+  }
+
+  &:nth-child(3) {
+    @media #{$desktop-widths} {
+      background: url("../img/iphone-screen-3-desktop@1x.png") center top no-repeat;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 360px;
+    padding-left: 65px;
+    padding-right: 65px;
+    text-align: center;
+  }
 }
 
 .description__title {
   margin: 10px 0;
   padding: 0 20px;
   font-weight: 700;
+  line-height: 26px;
+
+  @media #{$tablet-widths} {
+    padding-left: 0;
+  }
 }
 
 .description__text {
-  margin: 0 0 10px;
+  margin: 0 0 45px;
   padding: 0 34px;
+  line-height: 26px;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+
+  @media #{$tablet-widths} {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 16px;
+  }
 }
 
 .description__bg {
   background: url("../img/iphone-screen-mobile@1x.png") center bottom no-repeat;
   background-position-y: 111%;
+
+  @media #{$tablet-widths} {
+    background: url("../img/iphone-screen-3-tablet@1x.png") center bottom no-repeat;
+    background-position-x: 20px;
+  }
+
+  @media #{$desktop-widths} {
+    background: none;
+  }
 }

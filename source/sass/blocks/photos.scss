@@ -2,18 +2,15 @@
   color: #283645;
 }
 
-.photos__title {
-  margin: 40px 0;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  font-weight: 400;
-  padding: 0 20px;
-}
-
 .photos__list {
   padding: 0;
   list-style: none;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .photos__item {
@@ -21,16 +18,62 @@
   font-size: 14px;
   line-height: 24px;
   min-width: 280px;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    width: 300px;
+  }
+
+  &:first-child {
+    @media #{$tablet-widths} {
+      width: 620px;
+    }
+
+    @media #{$desktop-widths} {
+      width: 940px;
+    }
+  }
+
+  &--panorama {
+    @media #{$tablet-widths} {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 }
 
 .photos__img {
-  &--first {
+  display: block;
+  width: 280px;
+  height: auto;
+
+  @media #{$tablet-widths} {
+    width: 300px;
+  }
+
+  &--panorama {
+    width: auto;
     margin-left: -20px;
+
+    @media #{$tablet-widths} {
+      width: 660px;
+    }
+
+    @media #{$desktop-widths} {
+      margin-left: -130px;
+      width: 1200px;
+    }
   }
 }
 
 .photos__comment {
   padding: 0 18px;
+
+  &--panorama {
+    order: 2;
+  }
 }
 
 .photos__user-info {
@@ -51,7 +94,15 @@
 }
 
 .photos__social {
+  margin-top: auto;
+  display: flex;
   padding: 0 18px;
+}
+
+.photos__like {
+  @media #{$tablet-widths} {
+    order: 1;
+  }
 }
 
 .photos__count {

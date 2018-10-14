@@ -1,8 +1,22 @@
 .tools {
   margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @media #{$tablet-widths} {
+    margin: 0;
+    width: 275px;
+    align-items: center;
+  }
+
+  @media #{$desktop-widths} {
+    width: 410px;
+  }
 }
 
 .tools__btn {
+  width: 50px;
   border: none;
   padding: 0;
   background-color: transparent;

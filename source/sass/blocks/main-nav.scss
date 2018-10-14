@@ -1,8 +1,30 @@
 .main-nav {
   min-height: 255px;
+  width: 320px;
+  margin-left: -20px;
+  z-index: 20;
+
+  @media #{$tablet-widths} {
+    width: 660px;
+  }
+
+  @media #{$desktop-widths} {
+    min-height: 0;
+    display: flex;
+    width: 620px;
+    margin-left: auto;
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
+
+  @media #{$desktop-widths} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }

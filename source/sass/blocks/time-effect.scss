@@ -1,0 +1,25 @@
+.time-effect {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: flex;
+  }
+}
+
+.time-effect__img {
+  width: 240px;
+  height: 275px;
+  flex-grow: 1;
+  margin-right: 72px;
+
+  @media #{$desktop-widths} {
+    display: block;
+    width: 298px;
+    height: 345px;
+    margin-right: 70px;
+  }
+}
+
+.time-effect__info {
+  flex-shrink: 100;
+}

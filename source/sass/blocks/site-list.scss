@@ -8,6 +8,11 @@
   background-color: #283645;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  @media #{$desktop-widths} {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .site-list__link {
@@ -16,4 +21,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 66px;
+
+  @media #{$desktop-widths} {
+    text-transform: uppercase;
+  }
 }

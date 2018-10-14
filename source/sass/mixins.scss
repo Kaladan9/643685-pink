@@ -1,4 +1,13 @@
 @mixin container() {
   width: 320px;
   margin: 0 auto;
+  overflow-x: hidden;
+
+  @media #{$tablet-widths} {
+    width: 660px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px;
+  }
 }

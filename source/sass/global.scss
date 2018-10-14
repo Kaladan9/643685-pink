@@ -5,7 +5,6 @@ body {
   position: relative;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -20,6 +19,15 @@ a {
 
 .wrapper {
   margin: 0 auto;
-  min-width: 260px;
+  width: 280px;
   padding: 0 20px;
+
+  @media #{$tablet-widths} {
+    width: 620px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 940px;
+    padding: 0 130px;
+  }
 }

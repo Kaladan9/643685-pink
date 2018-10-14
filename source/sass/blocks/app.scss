@@ -1,12 +1,46 @@
 .app {
-  padding-top: 26px;
   background-color: #1d2631;
   text-align: center;
+  padding: 0 20px;
+  z-index: 10;
+  min-height: 320px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media #{$tablet-widths} {
+    min-width: 300px;
+    background-color: transparent;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 130px;
+    min-width: 300px;
+    background-color: transparent;
+  }
+}
+
+.app__slogan {
+  display: none;
+  margin: 0;
+  font-size: 40px;
+
+  @media #{$tablet-widths} {
+    display: block;
+    padding: 0 50px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 300;
+  }
 }
 
 .app__list {
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app__link {
