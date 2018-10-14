@@ -1,0 +1,36 @@
+.intro {
+  position: relative;
+  background: url("../img/bg-back-mobile@1x.jpg") center top no-repeat;
+  z-index: -1;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    background: url("../img/bg-back-tablet@1x.jpg") center top no-repeat;
+  }
+
+  @media #{$desktop-widths} {
+    display: flex;
+    background: url("../img/bg-back-desktop@1x.jpg") center top no-repeat;
+  }
+}
+
+.intro__bg {
+  &::after {
+    content: url("../img/iphone-hand-mobile@1x.png");
+    position: absolute;
+    bottom: 318px;
+    left: 0;
+
+    @media #{$tablet-widths} {
+      content: url("../img/iphone-hand-tablet@1x.png");
+      bottom: -2px;
+      left: -20px;
+    }
+
+    @media #{$desktop-widths} {
+      content: url("../img/iphone-hand-desktop@1x.png");
+      bottom: -2px;
+      left: 20px;
+    }
+  }
+}

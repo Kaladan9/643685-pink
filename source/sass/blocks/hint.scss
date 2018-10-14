@@ -2,6 +2,11 @@
   margin: 40px 0;
   text-align: center;
 
+  @media #{$desktop-widths} {
+    margin: 0;
+    margin-right: 20px;
+  }
+
   &--red {
     color: #d8456d;
   }

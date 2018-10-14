@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="page-header">
-  <div class="page-header__wrapper wrapper">
-    <a class="page-header__logo">
-      <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
-    </a>
+<header class="page-header wrapper">
+  <div class="page-header__wrapper">
+    <a class="page-header__logo"></a>
     <button class="page-header__button" type="button">
       <img class="page-header__toggle" src="img/icon-menu-burger.svg" alt="Открыть меню" width="50px" height="24px">
     </button>
@@ -41,150 +41,210 @@
 
 <main class="page-main">
 
-    <div class="page-main__preview page-main__preview--short">
+  <section class="page-main__intro intro">
+    <div class="page-main__preview preview preview--short">
       <h1 class="page-main__slogan">Фотографии пользователей</h1>
     </div>
+  </section>
 
-    <section class="photos wrapper">
-      <h2 class="photos__title">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        <br>
-        Видите, как не хватает ваших?
-      </h2>
+  <h2 class="page-main__title">
+    Взгляните на фотографии, которые выкладывают пользователи!
+    <br>
+    Видите, как не хватает ваших?
+  </h2>
 
-      <ul class="photos__list">
+  <section class="photos wrapper">
+    <ul class="photos__list">
 
-        <li class="photos__item">
-          <img class="photos__img photos__img--first" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Анна</b>
-            <p class="photos__time">(5 минут назад)</p>
-          </div>
-          <p class="photos__comment">
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите первую
-            трансляцию в перископе, задавайте свои вопросы!
-          </p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 215</p>
-          </div>
-        </li>
+      <li class="photos__item photos__item--panorama">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x">
+            <img class="photos__img photos__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Анна</b>
+          <p class="photos__time">(5 минут назад)</p>
+        </div>
+        <p class="photos__comment photos__comment--panorama">
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите первую
+          трансляцию в перископе, задавайте свои вопросы!
+        </p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 215</p>
+        </div>
+      </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Левон</b>
-            <p class="photos__time">(5 часов назад)</p>
-          </div>
-          <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 356</p>
-          </div>
-        </li>
+      <li class="photos__item">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x">
+            <img class="photos__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Левон</b>
+          <p class="photos__time">(5 часов назад)</p>
+        </div>
+        <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 356</p>
+        </div>
+      </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Антон</b>
-            <p class="photos__time">(12 часов назад)</p>
-          </div>
-          <p class="photos__comment">Соседи будут рады!</p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 666</p>
-          </div>
-        </li>
+      <li class="photos__item">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x">
+            <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Антон</b>
+          <p class="photos__time">(12 часов назад)</p>
+        </div>
+        <p class="photos__comment">Соседи будут рады!</p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 666</p>
+        </div>
+      </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Борис</b>
-            <p class="photos__time">(20 часов назад)</p>
-          </div>
-          <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 215</p>
-          </div>
-        </li>
+      <li class="photos__item">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x">
+            <img class="photos__img" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Борис</b>
+          <p class="photos__time">(20 часов назад)</p>
+        </div>
+        <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 215</p>
+        </div>
+      </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Сергей</b>
-            <p class="photos__time">(25 часов назад)</p>
-          </div>
-          <p class="photos__comment">Самая кубанская в мире!</p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 4</p>
-          </div>
-        </li>
+      <li class="photos__item">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x">
+            <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Сергей</b>
+          <p class="photos__time">(25 часов назад)</p>
+        </div>
+        <p class="photos__comment">Самая кубанская в мире!</p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 4</p>
+        </div>
+      </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Максим</b>
-            <p class="photos__time">(40 часов назад)</p>
-          </div>
-          <p class="photos__comment">Где снег-то?</p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 150</p>
-          </div>
-        </li>
+      <li class="photos__item">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x">
+            <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Максим</b>
+          <p class="photos__time">(40 часов назад)</p>
+        </div>
+        <p class="photos__comment">Где снег-то?</p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 150</p>
+        </div>
+      </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
-          <div class="photos__user-info">
-            <b class="photos__user-name">Надежда</b>
-            <p class="photos__time">(45 часов назад)</p>
-          </div>
-          <p class="photos__comment">Всем GM и взаимные лайки!</p>
-          <div class="photos__social">
-            <img class="photos__like" src="img/icon-heart.svg">
-            <p class="photos__count">Нравится: 2560</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+      <li class="photos__item">
+        <a class="photos__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x">
+            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x">
+            <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="photos__user-info">
+          <b class="photos__user-name">Надежда</b>
+          <p class="photos__time">(45 часов назад)</p>
+        </div>
+        <p class="photos__comment">Всем GM и взаимные лайки!</p>
+        <div class="photos__social">
+          <img class="photos__like" src="img/icon-heart.svg">
+          <p class="photos__count">Нравится: 2560</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-    <section class="user-photo">
-      <h2 class="visually-hidden">Загрузка своего фото</h2>
+  <section class="user-photo">
+    <h2 class="visually-hidden">Загрузка своего фото</h2>
 
-      <h3 class="user-photo__title">
-        Затмите их всех!
-        <br>
-        Выкладывайте все, что накопилось в телефоне!
-      </h3>
-      <img class="user-photo__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя">
+    <h3 class="user-photo__title">
+      Затмите их всех!
+      <br>
+      Выкладывайте все, что накопилось в телефоне!
+    </h3>
+
+    <div class="wrapper user-photo__content">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x">
+        <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x">
+        <img class="user-photo__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя">
+      </picture>
 
       <div class="user-photo__tools tools">
         <button type="button" class="tools__btn tools__btn--crop">
           <img class="page-header__toggle" src="img/icon-editor-crop.svg" alt="Обрезать" width="44px" height="44px">
         </button>
+        <div class="tools__control control control--active">
+          <div class="control__bar"></div>
+          <div class="control__pin"></div>
+        </div>
         <button type="button" class="tools__btn tools__btn--contrast">
           <img class="page-header__toggle" src="img/icon-editor-fill.svg" alt="Заливка" width="48px" height="43px">
         </button>
-        <button type="button" class="tools__btn tools__btn--fill">
-          <img class="page-header__toggle" src="img/icon-editor-contrast.svg" alt="Контраст" width="32px" height="32px">
-        </button>
-
         <div class="tools__control control">
           <div class="control__bar"></div>
           <div class="control__pin"></div>
         </div>
-      </div>
+        <button type="button" class="tools__btn tools__btn--fill">
+          <img class="page-header__toggle" src="img/icon-editor-contrast.svg" alt="Контраст" width="32px" height="32px">
+        </button>
+        <div class="tools__control control">
+          <div class="control__bar"></div>
+          <div class="control__pin"></div>
+        </div>
 
-      <button type="button" class="user-photo__post button button--round button--pink button--transparent">Запостить</button>
-      <button type="button" class="user-photo__cancel button button--round button--grey button--transparent">Отмена</button>
-    </section>
+        <button type="button" class="user-photo__btn button button--round button--pink button--transparent">Запостить
+        </button>
+        <button type="button" class="user-photo__btn button button--round button--grey button--transparent">Отмена
+        </button>
+      </div>
+    </div>
+  </section>
 
 </main>
 
 <footer class="page-footer">
-  <div class="wrapper">
+  <div class="page-footer__reference reference wrapper">
 
     <a class="page-footer__link" href="#">
       <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Pink" width="147px" height="40px">

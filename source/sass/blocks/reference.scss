@@ -1,0 +1,17 @@
+.reference {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.reference--index {
+  display: none;
+
+  @media #{$tablet-widths} {
+    display: flex;
+  }
+}

@@ -1,23 +1,52 @@
 .user-photo {
   color: #283645;
   background: $bg-color;
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
 
 .user-photo__title {
+  width: 100%;
   margin: 0 0 20px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   font-weight: 400;
-  padding: 40px 20px;
+  padding: 40px 0;
   background-color: #ffffff;
 }
 
-.user-photo__post {
+.user-photo__content {
+  @media #{$tablet-widths} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.user-photo__img {
+  width: 280px;
+  height: auto;
+
+  @media #{$tablet-widths} {
+    width: 300px;
+  }
+}
+
+.user-photo__btn {
   margin-bottom: 12px;
+  order: 2;
+
+  @media #{$tablet-widths} {
+    width: 260px;
+    order: 0;
+    margin-right: auto;
+  }
+
+  @media #{$desktop-widths} {
+    width: 180px;
+  }
 }

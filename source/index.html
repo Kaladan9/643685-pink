@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="page-header">
-  <div class="page-header__wrapper wrapper">
-    <a class="page-header__logo">
-      <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink">
-    </a>
+<header class="page-header wrapper">
+  <div class="page-header__wrapper">
+    <a class="page-header__logo"></a>
     <button class="page-header__button" type="button">
       <img class="page-header__toggle" src="img/icon-menu-burger.svg" alt="Открыть меню" width="50px" height="24px">
     </button>
@@ -41,59 +41,103 @@
 
 <main class="page-main">
 
-  <div class="page-main__preview preview preview__bg">
-    <h1 class="visually-hidden">Pink - расскрасьте серые будни в розовый цвет</h1>
-  </div>
+  <section class="page-main__intro intro intro__bg">
+    <div class="page-main__preview preview">
+      <h1 class="visually-hidden">Pink - расскрасьте серые будни в розовый цвет</h1>
+    </div>
 
-  <section class="app wrapper">
-    <h2 class="visually-hidden">Мобильное приложение</h2>
+    <div class="page-main__app app">
+      <h2 class="visually-hidden">Мобильное приложение</h2>
 
-    <a class="app__download button button--round button--transparent" href="#">Скачать приложение</a>
+      <p class="app__slogan">
+        Взгляните на жизнь иначе!
+      </p>
 
-    <ul class="app__list">
-      <li class="app__item">
-        <a class="app__link" href="#">
-          <img class="app__img" src="img/logo-apple.svg" alt="Apple" width="47px" height="56px">
-        </a>
-      </li>
-      <li class="app__item">
-        <a class="app__link" href="#">
-          <img class="app__img" src="img/logo-android.svg" alt="Android" width="43px" height="47px">
-        </a>
-      </li>
-      <li class="app__item">
-        <a class="app__link" href="#">
-          <img class="app__img" src="img/logo-microsoft.svg" alt="Windows" width="44px" height="41px">
-        </a>
-      </li>
-    </ul>
+      <a class="app__download button button--round button--transparent" href="#">Скачать приложение</a>
 
-    <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+      <ul class="app__list">
+        <li class="app__item">
+          <a class="app__link" href="#">
+            <img class="app__img" src="img/logo-apple.svg" alt="Apple" width="47px" height="56px">
+          </a>
+        </li>
+        <li class="app__item">
+          <a class="app__link" href="#">
+            <img class="app__img" src="img/logo-android.svg" alt="Android" width="43px" height="47px">
+          </a>
+        </li>
+        <li class="app__item">
+          <a class="app__link" href="#">
+            <img class="app__img" src="img/logo-microsoft.svg" alt="Windows" width="44px" height="41px">
+          </a>
+        </li>
+      </ul>
+
+      <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
   </section>
 
   <section class="description">
     <h2 class="visually-hidden">Описание приложения</h2>
     <p class="description__message">Устали от серости мегаполиса?</p>
-    <p class="description__message">Нам есть, что вам предложить!</p>
+    <p class="description__message">
+      Нам есть, что вам <br>
+      предложить!
+    </p>
 
     <ul class="description__list description__bg">
       <li class="description__item">
         <h3 class="description__title">Поднимает настроение</h3>
         <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
           несколько
-          кликов</p>
+          кликов!</p>
       </li>
-      <li>
+      <li class="description__item">
         <h3 class="description__title">Меняет мир вокруг</h3>
         <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
           эффект</p>
       </li>
-      <li>
+      <li class="description__item">
         <h3 class="description__title">Заводит новых друзей</h3>
         <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
           новых</p>
       </li>
     </ul>
+  </section>
+
+  <section class="time-effect wrapper">
+    <h2 class="visually-hidden">Исследования британских ученых</h2>
+    <svg class="time-effect__img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+      <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,
+      3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,
+      5.385 C221.768,63.292,196.11,51.875,168,
+      48.297v-9.583h7.658c10.914,0,19.843-8.711,
+      19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,
+      0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,
+      19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,
+      82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,
+      285.465,127.703,264.568,102.055z M149,306.264 c-60.844,
+      0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,
+      0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z">
+      </path>
+      <path fill="#d22856" d="M149,69.048c-69.864,0-126.5,
+      56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,
+      126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,
+      306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,
+      88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,
+      110.167C259.167,256.941,209.843,306.264,149,306.264z">
+      </path>
+    </svg>
+    <div class="time-effect__info">
+      <h3 class="time-effect__title">
+        Эффект на 24 часа!
+      </h3>
+      <p class="time-effect__text">
+        Британские ученые провели исследования и доказали,
+        что положительный эффект от использования приложения длится целые сутки!
+      </p>
+      <a class="time-effect__link" href="#">Узнать больше об исследовании</a>
+    </div>
   </section>
 
   <section class="feedback">
@@ -102,11 +146,14 @@
 
       <ul class="feedback__list slider__list">
         <li class="feedback__item slider__item">
-          <h3 class="feedback__name">Николай Петров</h3>
           <p class="feedback__message">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенный фотографии!»
+            «Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к
+            выложенный фотографии!»
           </p>
+          <h3 class="feedback__name">Николай Петров</h3>
+          <p class="feedback__user-info">25 лет, водитель трамвая</p>
         </li>
         <li class="feedback__item slider__item">
           <h3 class="feedback__name"></h3>
@@ -131,50 +178,42 @@
 
     <ul class="subscribe__list slider__list">
       <li class="subscribe__item slider__item">
-        <header class="subscribe__header">
-          <h3 class="subscribe__title">Стандарт</h3>
-          <p class="subscribe__cost">3,99 USD</p>
-        </header>
-
         <ul class="subscribe__options options">
-          <li class="options__item">
-            <p class="options__name">Розовый цвет</p>
-            <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
+          <li class="options__item options__item">
+            <p class="options__name options__name--lower-case">Розовый фильтр</p>
           </li>
-          <li class="options__item">
-            <p class="options__name">Смайлики</p>
-            <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
+          <li class="options__item options__item">
+            <p class="options__name options__name--lower-case">Смайлики</p>
           </li>
-          <li class="options__item">
-            <p class="options__name">Комментарии</p>
-            <img class="options__img" src="img/icon-no.svg" alt="Нет"  width="27px" height="26px">
+          <li class="options__item options__item">
+            <p class="options__name options__name--lower-case">Комментарии</p>
           </li>
         </ul>
       </li>
 
       <li class="subscribe__item slider__item">
         <header class="subscribe__header">
-          <h3 class="subscribe__title">Стандарт</h3>
-          <p class="subscribe__cost">3,99 USD</p>
+          <h3 class="subscribe__title">База</h3>
+          <p class="subscribe__cost">1,99 USD</p>
         </header>
 
         <ul class="subscribe__options options">
           <li class="options__item">
-            <p class="options__name">Розовый цвет</p>
+            <p class="options__name">Розовый фильтр</p>
             <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
           </li>
           <li class="options__item">
             <p class="options__name">Смайлики</p>
-            <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
+            <img class="options__img" src="img/icon-no.svg" alt="Нет" width="31px" height="21px">
           </li>
           <li class="options__item">
             <p class="options__name">Комментарии</p>
-            <img class="options__img" src="img/icon-no.svg" alt="Нет"  width="27px" height="26px">
+            <img class="options__img" src="img/icon-no.svg" alt="Нет" width="27px" height="26px">
           </li>
         </ul>
       </li>
 
-      <li class="subscribe__item slider__item">
+      <li class="subscribe__item subscribe__item--active slider__item">
         <header class="subscribe__header">
           <h3 class="subscribe__title">Стандарт</h3>
           <p class="subscribe__cost">3,99 USD</p>
@@ -182,7 +221,7 @@
 
         <ul class="subscribe__options options">
           <li class="options__item">
-            <p class="options__name">Розовый цвет</p>
+            <p class="options__name">Розовый фильтр</p>
             <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
           </li>
           <li class="options__item">
@@ -191,7 +230,29 @@
           </li>
           <li class="options__item">
             <p class="options__name">Комментарии</p>
-            <img class="options__img" src="img/icon-no.svg" alt="Нет"  width="27px" height="26px">
+            <img class="options__img" src="img/icon-no.svg" alt="Нет" width="27px" height="26px">
+          </li>
+        </ul>
+      </li>
+
+      <li class="subscribe__item slider__item">
+        <header class="subscribe__header">
+          <h3 class="subscribe__title">Анлим</h3>
+          <p class="subscribe__cost">9,99 USD</p>
+        </header>
+
+        <ul class="subscribe__options options">
+          <li class="options__item">
+            <p class="options__name">Розовый фильтр</p>
+            <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
+          </li>
+          <li class="options__item">
+            <p class="options__name">Смайлики</p>
+            <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="31px" height="21px">
+          </li>
+          <li class="options__item">
+            <p class="options__name">Комментарии</p>
+            <img class="options__img" src="img/icon-yes.svg" alt="Есть" width="27px" height="26px">
           </li>
         </ul>
       </li>
@@ -206,26 +267,60 @@
 </main>
 
 <footer class="page-footer">
-    <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
+  <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
 
-    <section class="page-footer__contacts contacts wrapper">
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <h3 class="contacts__title">Звоните</h3>
-          <p class="contacts__text">+7 (812) 555-66-66</p>
+  <section class="page-footer__contacts contacts wrapper">
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <h3 class="contacts__title">Звоните</h3>
+        <p class="contacts__text">+7 (812) 555-66-66</p>
+      </li>
+      <li class="contacts__item">
+        <h3 class="contacts__title">Пишите</h3>
+        <p class="contacts__text">mail@htmlacademy.ru</p>
+      </li>
+      <li class="contacts__item">
+        <h3 class="contacts__title">Приезжайте в гости</h3>
+        <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+      </li>
+    </ul>
+  </section>
+
+  <div class="page-footer__map"></div>
+
+  <div class="page-footer__reference reference reference--index wrapper">
+
+    <a class="page-footer__link" href="#">
+      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Pink" width="147px" height="40px">
+    </a>
+
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <img class="app__img" src="img/icon-twitter.svg" alt="Twitter" width="18px" height="14px">
+          </a>
         </li>
-        <li class="contacts__item">
-          <h3 class="contacts__title">Пишите</h3>
-          <p class="contacts__text">mail@htmlacademy.ru</p>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <img class="app__img" src="img/icon-facebook.svg" alt="Facebook" width="9px" height="18px">
+          </a>
         </li>
-        <li class="contacts__item">
-          <h3 class="contacts__title">Приезжайте в гости</h3>
-          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <img class="app__img" src="img/icon-youtube.svg" alt="Youtube" width="15px" height="13px">
+          </a>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <img class="page-footer__map" src="img/bg-map-mobile@1x.png" alt="Как добраться">
+    <div class="page-footer__developer developer">
+      <p class="developer__text">Разработано</p>
+      <a class="developer__link" href="#">
+        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="27px" height="34px">
+      </a>
+    </div>
+  </div>
 </footer>
 
 </body>

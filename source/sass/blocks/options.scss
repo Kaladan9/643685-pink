@@ -5,9 +5,19 @@
 
 .options__item {
   border-bottom: 2px solid #e5e5e5;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 44px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media #{$tablet-widths} {
+    justify-content: flex-start;
+  }
 }
 
 .options__name {
@@ -15,8 +25,26 @@
   color: #283645;
   font-size: 14px;
   margin-left: 25px;
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
+
+  &--lower-case {
+    @media #{$tablet-widths} {
+      text-align: left;
+      text-transform: none;
+      display: block;
+      margin-left: 15px;
+    }
+  }
 }
 
 .options__img {
-  margin-right: 25px;
+  margin-right: 20px;
+
+  @media #{$tablet-widths} {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
