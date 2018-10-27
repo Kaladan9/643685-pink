@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
   width: 274px;
-  height: 55px;
-  line-height: 55px;
+  height: 49px;
+  line-height: 49px;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
@@ -10,6 +10,10 @@
 
   @media #{$tablet-widths} {
     width: 294px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 21px;
   }
 
   &--round {
@@ -35,5 +39,14 @@
   &--grey {
     color: #dddfe0;
     border: 3px solid #dddfe0;
+  }
+
+  &--square {
+    width: 280px;
+    height: 63px;
+
+    @media #{$tablet-widths} {
+      width: 300px;
+    }
   }
 }

@@ -1,0 +1,28 @@
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+
+  @media #{$desktop-widths} {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  margin-right: 10px;
+  margin-left: 9px;
+  display: inline-block;
+  font-size: 0;
+  border: none;
+  padding: 3px 3px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+
+  &--active {
+    background-color: #ffffff;
+    border: 2px solid #283645;
+  }
+}

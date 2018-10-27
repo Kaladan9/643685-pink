@@ -1,10 +1,14 @@
 .site-list {
   list-style: none;
   text-align: center;
+
+  @media #{$desktop-widths} {
+    padding-right: 5px;
+  }
 }
 
 .site-list__item {
-  min-height: 64px;
+  min-height: 62px;
   background-color: #283645;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
@@ -20,9 +24,10 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  line-height: 66px;
+  line-height: 62px;
 
   @media #{$desktop-widths} {
-    text-transform: uppercase;
+    text-transform: none;
+    font-size: 16px;
   }
 }

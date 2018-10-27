@@ -1,14 +1,51 @@
 .subscribe {
-  padding-top: 26px;
+  position: relative;
+  padding-top: 61px;
+  padding-bottom: 41px;
   background-color: $bg-color;
 
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    top: -28px;
+    left: -35px;
+    height: 0;
+    width: 0;
+    border: 25px solid transparent;
+    border-right: 334px solid #f2f2f2;
+    border-bottom: 57px solid #f2f2f2;
+
+    @media #{$tablet-widths} {
+      top: -52px;
+      left: -35px;
+      border: 53px solid transparent;
+      border-right: 674px solid #f2f2f2;
+    }
+
+    @media #{$desktop-widths} {
+      top: -82px;
+      left: -154px;
+      border: 87px solid transparent;
+      border-right: 1282px solid #f2f2f2;
+    }
+  }
+
   @media #{$tablet-widths} {
-    padding-bottom: 24px;
+    padding-top: 37px;
+    padding-bottom: 36px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 65px;
+    padding-bottom: 61px;
   }
 }
 
 .subscribe__list {
   margin: 0 auto;
+  margin-bottom: 34px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -18,7 +55,7 @@
 
 .subscribe__item {
   border: 2px solid #e5e5e5;
-  min-width: 280px;
+  min-width: 276px;
 
   &:nth-child(1) {
     border-right: none;
@@ -43,27 +80,92 @@
   }
 
   @media #{$desktop-widths} {
-    width: 235px;
+    width: 233px;
   }
 }
 
 .subscribe__header {
-  padding: 24px 0;
+  position: relative;
+  padding: 22px 0;
   background-color: #283645;
   color: white;
   text-align: center;
+
+  @media #{$tablet-widths} {
+    padding: 18px 0;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 22px 0;
+  }
+
+  &--hit {
+    &::before {
+      content: url("../img/bg-hit.svg");
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @media #{$tablet-widths} {
+        content: url("../img/bg-hit-tablet.svg");
+      }
+
+      @media #{$desktop-widths} {
+        content: url("../img/bg-hit.svg");
+      }
+    }
+
+    &::after {
+      content: "ХИТ";
+      position: absolute;
+      top: 17px;
+      left: 7px;
+      transform: rotate(-50grad);
+      color: white;
+      font-size: 16px;
+
+      @media #{$tablet-widths} {
+        top: 10px;
+        left: 7px;
+        font-size: 14px;
+      }
+
+      @media #{$desktop-widths} {
+        top: 17px;
+        left: 11px;
+      }
+    }
+  }
 }
 
 .subscribe__title {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
+  text-transform: uppercase;
+
+  @media #{$tablet-widths} {
+    font-size: 15px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 18px;
+  }
 }
 
 .subscribe__cost {
   font-size: 24px;
   margin: 0;
   font-weight: 300;
+  padding-top: 7px;
+
+  @media #{$tablet-widths} {
+    font-size: 18px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 24px;
+  }
 }
 
 .subscribe__toggles {

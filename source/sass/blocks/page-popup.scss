@@ -1,10 +1,15 @@
 .page-popup {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
   width: 320px;
   text-align: center;
   line-height: 24px;
   padding: 48px 0;
   margin: 0 auto;
   overflow-x: hidden;
+  background-color: white;
 
   @media #{$tablet-widths} {
     width: 460px;
@@ -13,16 +18,62 @@
   @media #{$desktop-widths} {
     width: 780px;
   }
+
+  &--no-bottom-padding {
+    padding-bottom: 0;
+  }
 }
 
+.page-popup__message {
+  padding: 0 20px;
+
+  @media #{$tablet-widths} {
+    padding: 0 105px;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 0 200px;
+  }
+}
+
+.page-popup__title {
+  font-size: 18px;
+  display: block;
+
+  @media #{$tablet-widths} {
+    font-size: 24px;
+
+    &--big-padding {
+      padding: 0 35px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 28px;
+  }
+}
 
 .page-popup__text {
-  padding: 0 10px;
+  font-size: 14px;
+
+  br {
+    @media #{$tablet-widths} {
+      display: none;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 16px;
+  }
 }
 
 .page-popup__button-box {
-  background-color: $bg-color;
-  padding: 48px 0;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
+
+  &--bg-grey {
+    padding: 45px 0;
+    background-color: $bg-color;
+  }
 }

@@ -2,9 +2,27 @@
   margin: 40px 0;
   text-align: center;
 
+  @media #{$tablet-widths} {
+    text-transform: uppercase;
+    margin: 25px 0;
+    margin-right: 18px;
+    font-size: 14px;
+  }
+
   @media #{$desktop-widths} {
-    margin: 0;
-    margin-right: 20px;
+    margin: 23px 0;
+    margin-right: 130px;
+    font-size: 14px;
+  }
+
+  mark {
+    display: none;
+    background-color: transparent;
+    color: inherit;
+
+    @media #{$desktop-widths} {
+      display: inline-block;
+    }
   }
 
   &--red {

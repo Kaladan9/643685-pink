@@ -1,6 +1,11 @@
 .page-footer {
   @include container();
   text-align: center;
+  padding-top: 3px;
+
+  @media #{$tablet-widths} {
+    padding-top: 8px;
+  }
 }
 
 .page-footer__title {
@@ -8,19 +13,65 @@
   color: #283645;
   font-weight: 300;
   font-size: 24px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 46px;
+    padding: 0 100px;
+    font-size: 40px;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 0 260px;
+    margin: 60px 0;
+    margin-bottom: 59px;
+    font-size: 50px;
+  }
 }
 
 .page-footer__map {
+  position: relative;
   min-height: 200px;
   background: url("../img/bg-map-mobile@1x.png") center bottom no-repeat;
 
+  &::before {
+    content: url("../img/icon-map-marker.svg");
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    display: block;
+    width: 18px;
+    height: 18px;
+    transform: translateX(-50%);
+
+    @media #{$tablet-widths} {
+      top: 52%;
+      left: 49%;
+    }
+  }
+
+  svg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
   @media #{$tablet-widths} {
     min-height: 375px;
-    background: url("../img/bg-map-tablet@1x.jpg") center bottom no-repeat;
+    margin-bottom: 36px;
+    background: url("../img/bg-map-tablet@1x.jpg") center no-repeat;
+    background-position-y: -346px;
   }
 
   @media #{$desktop-widths} {
     min-height: 500px;
+    margin-bottom: 70px;
     background: url("../img/bg-map-desktop@1x.jpg") center bottom no-repeat;
+    background-position-y: -279px;
   }
+}
+
+.page-footer__link {
+  margin-bottom: 38px;
 }

@@ -35,6 +35,11 @@
     }
   }
 
+  @media #{$tablet-widths} {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
   @media #{$desktop-widths} {
     margin: 0;
     min-width: 0;
@@ -67,6 +72,10 @@
   padding: 0;
   background-color: transparent;
   line-height: 0;
+
+  @media #{$tablet-widths} {
+    padding-top: 17px;
+  }
 
   @media #{$desktop-widths} {
     display: none;

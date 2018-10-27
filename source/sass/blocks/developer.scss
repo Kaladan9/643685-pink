@@ -3,3 +3,25 @@
   justify-content: center;
   margin-bottom: 38px;
 }
+
+.developer__text {
+  font-size: 14px;
+  margin-right: 15px;
+
+  @media #{$tablet-widths} {
+    margin-top: 20px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+}
+
+.developer__link {
+  padding-top: 9px;
+
+  @media #{$tablet-widths} {
+    padding-top: 14px;
+  }
+}

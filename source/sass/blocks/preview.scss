@@ -1,6 +1,6 @@
 .preview {
   width: 100%;
-  min-height: 426px;
+  min-height: 462px;
   z-index: 1;
   position: relative;
   display: flex;
@@ -18,5 +18,14 @@
 
   &--short {
     min-height: 235px;
+
+    @media #{$tablet-widths} {
+      min-height: 439px;
+    }
+
+    @media #{$desktop-widths} {
+      min-height: 394px;
+      padding: 0 130px;
+    }
   }
 }
