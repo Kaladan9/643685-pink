@@ -1,6 +1,8 @@
 .page-main {
   @include container();
   margin-top: -66px;
+  overflow: hidden;
+  display: block;
 
   @media #{$tablet-widths} {
     margin-top: -110px;
@@ -81,6 +83,12 @@
   }
 
   &--big-padding {
+    padding: 0 38px;
+
+    @media #{$tablet-widths} {
+      padding: 0 60px;
+    }
+
     @media #{$desktop-widths} {
       padding: 0 280px;
     }

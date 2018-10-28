@@ -500,7 +500,7 @@
     transform: translateX(-50%);
   }
 
-  &--display-none-mobile {
+  &--mobile-hidden {
     display: none;
 
     @media #{$tablet-widths} {

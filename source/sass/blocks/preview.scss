@@ -17,6 +17,7 @@
   }
 
   &--short {
+    height: 0; //for align-items: center on IE11
     min-height: 235px;
 
     @media #{$tablet-widths} {
