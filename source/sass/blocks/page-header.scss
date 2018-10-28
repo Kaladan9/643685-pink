@@ -53,16 +53,10 @@
   margin-right: auto;
   width: 74px;
   height: 23px;
-  background: url("../img/logo-pink-white-mobile.svg");
 
   @media #{$tablet-widths} {
     width: 146px;
     height: 40px;
-    background: url("../img/logo-pink-white-tablet.svg");
-  }
-
-  @media #{$desktop-widths} {
-    background: url("../img/logo-pink-white-desktop.svg");
   }
 }
 

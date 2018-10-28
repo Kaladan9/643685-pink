@@ -23,12 +23,13 @@
       top: 225px;
       left: 0;
       width: 125%;
-      height: auto;
+      height: 65px;
     }
 
     @media #{$desktop-widths} {
       top: 206px;
       width: 202%;
+      height: 191px;
     }
   }
 }
@@ -126,6 +127,11 @@
 
     @media #{$desktop-widths} {
       background: url("../img/iphone-screen-1-desktop@1x.png") center top no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/iphone-screen-1-desktop@2x.png") center top no-repeat;
+        background-size: 81%;
+      }
     }
   }
 
@@ -139,12 +145,22 @@
     @media #{$desktop-widths} {
       margin-left: -25px;
       background: url("../img/iphone-screen-2-desktop@1x.png") center top no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/iphone-screen-2-desktop@2x.png") center top no-repeat;
+        background-size: 87%;
+      }
     }
   }
 
   &:nth-child(3) {
     @media #{$desktop-widths} {
       background: url("../img/iphone-screen-3-desktop@1x.png") center top no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/iphone-screen-3-desktop@2x.png") center top no-repeat;
+        background-size: 96%;
+      }
     }
   }
 
@@ -220,9 +236,21 @@
   z-index: 200;
   position: relative;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/iphone-screen-mobile@2x.png") center bottom no-repeat;
+    background-position-y: 109%;
+    background-size: 49%;
+  }
+
   @media #{$tablet-widths} {
     background: url("../img/iphone-screen-3-tablet@1x.png") center bottom no-repeat;
     background-position-x: 20px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/iphone-screen-3-tablet@2x.png") center bottom no-repeat;
+      background-position-x: 20px;
+      background-size: 41%;
+    }
   }
 
   @media #{$desktop-widths} {

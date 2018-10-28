@@ -13,25 +13,65 @@
     display: flex;
     background: url("../img/bg-back-desktop@1x.jpg") center top no-repeat;
   }
-}
 
-.intro__bg {
-  &::after {
-    content: url("../img/iphone-hand-mobile@1x.png");
-    position: absolute;
-    bottom: 268px;
-    left: 0;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") center top no-repeat;
+    background-size: 221%;
 
     @media #{$tablet-widths} {
-      content: url("../img/iphone-hand-tablet@1x.png");
-      bottom: -2px;
-      left: -20px;
+      background: url("../img/bg-back-tablet@2x.jpg") center top no-repeat;
+      background-size: 182%;
     }
 
     @media #{$desktop-widths} {
-      content: url("../img/iphone-hand-desktop@1x.png");
+      background: url("../img/bg-back-desktop@2x.jpg") center top no-repeat;
+      background-size: 217%;
+      background-position-x: -698px;
+    }
+  }
+}
+
+.intro--bg {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 268px;
+    left: 0;
+    display: block;
+    width: 700px;
+    height: 545px;
+    background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
+
+    @media #{$tablet-widths} {
+      bottom: -2px;
+      left: -20px;
+      background: url("../img/iphone-hand-tablet@1x.png") left bottom no-repeat;
+    }
+
+    @media #{$desktop-widths} {
       bottom: -4px;
       left: 146px;
+      width: 1050px;
+      height: 645px;
+      background: url("../img/iphone-hand-desktop@1x.png") left bottom no-repeat;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/iphone-hand-mobile@2x.png") left bottom no-repeat;
+      background-size: 37%;
+      bottom: 272px;
+
+      @media #{$tablet-widths} {
+        background: url("../img/iphone-hand-tablet@2x.png") left bottom no-repeat;
+        background-size: 100%;
+        bottom: 1px;
+      }
+
+      @media #{$desktop-widths} {
+        background: url("../img/iphone-hand-desktop@2x.png") left bottom no-repeat;
+        background-size: 100%;
+        bottom: 0;
+      }
     }
   }
 }

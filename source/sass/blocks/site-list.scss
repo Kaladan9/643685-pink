@@ -1,10 +1,6 @@
 .site-list {
   list-style: none;
   text-align: center;
-
-  @media #{$desktop-widths} {
-    padding-right: 5px;
-  }
 }
 
 .site-list__item {
@@ -28,6 +24,7 @@
 
   @media #{$desktop-widths} {
     text-transform: none;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
   }
 }

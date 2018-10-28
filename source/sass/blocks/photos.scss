@@ -168,6 +168,7 @@
   margin-top: auto;
   display: flex;
   padding: 0 18px;
+  align-items: center;
 
   @media #{$tablet-widths} {
     margin-left: 10px;

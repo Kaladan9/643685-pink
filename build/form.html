@@ -12,12 +12,18 @@
 
 <header class="page-header wrapper">
   <div class="page-header__wrapper">
-    <a class="page-header__logo" href="index.html"></a>
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+      </picture>
+    </a>
     <button class="page-header__button" type="button">
-      <img class="page-header__toggle visually-hidden" src="img/icon-menu-burger.svg" alt="Открыть меню" width="50px" height="24px">
+      <img class="page-header__toggle visually-hidden" src="img/icon-menu-burger.svg" alt="Открыть меню" width="50" height="24">
     </button>
     <button class="page-header__button" type="button">
-      <img class="page-header__toggle" src="img/icon-menu-cross.svg" alt="Закрыть меню" width="24px" height="23px">
+      <img class="page-header__toggle" src="img/icon-menu-cross.svg" alt="Закрыть меню" width="24" height="23">
     </button>
   </div>
 
@@ -113,7 +119,7 @@
     </div>
 
     <div class="form__fieldset form__fieldset--white form__fieldset--border form__wrapper">
-      <p class="form__text form__text--display-none-mobile">Контактная информация</p>
+      <p class="form__text form__text--mobile-hidden">Контактная информация</p>
       <label class="form__label form__label--red form__label--small form__label--padding-left form__label--bottom" for="phone">
         Номер телефона
       </label>
@@ -168,14 +174,14 @@
   <div class="page-footer__reference reference wrapper">
 
     <a class="page-footer__link" href="#">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Pink" width="147px" height="40px">
+      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Pink" width="147" height="40">
     </a>
 
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
                 <g>
                   <path fill="#d22856" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z">
@@ -187,7 +193,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z">
               </path>
             </svg>
@@ -195,7 +201,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z">
               </path>
             </svg>
@@ -207,7 +213,7 @@
     <div class="page-footer__developer developer">
       <p class="developer__text">Разработано</p>
       <a class="developer__link" href="#">
-        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="27px" height="34px">
+        <img class="page-footer__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>
     </div>
   </div>

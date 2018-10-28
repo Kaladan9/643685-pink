@@ -46,11 +46,19 @@
 .subscribe__list {
   margin: 0 auto;
   margin-bottom: 34px;
+  margin-left: -258px;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+
+  @media #{$tablet-widths} {
+    margin-left: 20px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-left: 130px;
+  }
 }
 
 .subscribe__item {
