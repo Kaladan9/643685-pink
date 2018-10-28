@@ -9,14 +9,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 44px;
+  min-height: 59px;
 
   &:last-child {
     border-bottom: none;
   }
 
   @media #{$tablet-widths} {
+    min-height: 44px;
     justify-content: flex-start;
+  }
+
+  @media #{$desktop-widths} {
+    min-height: 59px;
   }
 }
 
@@ -24,7 +29,7 @@
   text-transform: uppercase;
   color: #283645;
   font-size: 14px;
-  margin-left: 25px;
+  margin-left: 22px;
 
   @media #{$tablet-widths} {
     display: none;
@@ -37,6 +42,11 @@
       display: block;
       margin-left: 15px;
     }
+  }
+
+  @media #{$desktop-widths} {
+    margin-left: 20px;
+    font-size: 18px;
   }
 }
 

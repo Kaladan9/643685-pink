@@ -1,7 +1,32 @@
+.social {
+  margin-bottom: 26px;
+}
+
 .social__list {
   padding: 0;
   list-style: none;
+  width: 178px;
+  margin: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$tablet-widths} {
+    margin-right: 16px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-right: -17px;
+    margin-top: 3px;
+  }
+}
+
+.social__link {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #e9ebec;
   justify-content: center;
   align-items: center;
 }

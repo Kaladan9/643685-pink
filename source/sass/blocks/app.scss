@@ -3,19 +3,21 @@
   text-align: center;
   padding: 0 20px;
   z-index: 10;
-  min-height: 320px;
+  min-height: 272px;
   max-width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media #{$tablet-widths} {
+    padding-top: 203px;
     min-width: 300px;
     background-color: transparent;
   }
 
   @media #{$desktop-widths} {
     padding-left: 130px;
+    padding-top: 218px;
     min-width: 300px;
     background-color: transparent;
   }
@@ -27,20 +29,68 @@
   font-size: 40px;
 
   @media #{$tablet-widths} {
+    line-height: 48px;
+    margin-bottom: 1px;
     display: block;
     padding: 0 50px;
     font-size: 40px;
     color: #ffffff;
     font-weight: 300;
   }
+
+  @media #{$desktop-widths} {
+    font-size: 50px;
+    padding: 0 32px;
+    line-height: 60px;
+    margin-bottom: 23px;
+  }
+}
+
+.app__download {
+  margin-top: 29px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 13px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 35px;
+  }
 }
 
 .app__list {
+  margin-top: 36px;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 32px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 50px;
+  }
+}
+
+.app__item {
+  &:first-child {
+    margin-top: -4px;
+
+    @media #{$tablet-widths} {
+      margin-left: 7px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-left: -3px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 7px;
+  }
 }
 
 .app__link {
@@ -49,7 +99,12 @@
 
 .app__description {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
   margin: 0;
+  margin-top: 3px;
+
+  @media #{$tablet-widths} {
+    font-size: 17px;
+  }
 }

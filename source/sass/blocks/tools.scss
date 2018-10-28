@@ -3,15 +3,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom: 0;
 
   @media #{$tablet-widths} {
     margin: 0;
     width: 275px;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 5px;
   }
 
   @media #{$desktop-widths} {
     width: 410px;
+    padding-top: 0;
   }
 }
 
@@ -21,4 +24,48 @@
   padding: 0;
   background-color: transparent;
   line-height: 0;
+
+  @media #{$tablet-widths} {
+    margin-top: -5px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-right: 30px;
+
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-top: -57px;
+      margin-left: 3px;
+    }
+
+    &:nth-child(5) {
+      margin-top: -69px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.tools__toggle {
+  @media #{$tablet-widths} {
+    width: 26px;
+    padding-right: 20px;
+
+    &--small {
+      padding-top: 6px;
+      width: 18px;
+    }
+  }
+
+  @media #{$desktop-widths} {
+    width: 50px;
+    height: auto;
+
+    &--small {
+      width: 34px;
+      height: auto;
+    }
+  }
 }

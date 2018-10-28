@@ -1,6 +1,6 @@
 .page-main {
   @include container();
-  margin-top: -70px;
+  margin-top: -66px;
 
   @media #{$tablet-widths} {
     margin-top: -110px;
@@ -13,24 +13,76 @@
   color: #ffffff;
   font-weight: 300;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 29px;
   padding: 0 20px;
-  margin-top: 70px;
+  margin-top: 52px;
 
   @media #{$tablet-widths} {
-    margin-top: 110px;
+    letter-spacing: 1px;
+    margin-top: 97px;
+    padding: 0 30px;
+    line-height: 61px;
+    font-size: 48px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-top: 72px;
+  }
+
+  &--small-margin-top {
+    margin-top: 18px;
+
+    @media #{$tablet-widths} {
+      margin-top: 40px;
+    }
+
+    @media #{$desktop-widths} {
+      padding: 0 150px;
+      margin-top: 72px;
+    }
   }
 }
 
 .page-main__title {
-  margin: 40px 0;
+  margin: 49px 0;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   font-weight: 400;
   padding: 0 20px;
 
+  br {
+    @media #{$tablet-widths} {
+      display: none;
+    }
+  }
+
+  mark {
+    display: none;
+    background-color: transparent;
+    color: inherit;
+
+    @media #{$tablet-widths} {
+      display: inline-block;
+    }
+  }
+
+  @media #{$tablet-widths} {
+    margin: 92px 0;
+    font-size: 18px;
+    padding: 0 50px;
+    margin-bottom: 45px;
+  }
+
   @media #{$desktop-widths} {
-    padding: 0 130px;
+    padding: 0 200px;
+    margin-bottom: 76px;
+  }
+
+  &--big-padding {
+    @media #{$desktop-widths} {
+      padding: 0 280px;
+    }
   }
 }

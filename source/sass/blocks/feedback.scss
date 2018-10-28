@@ -1,6 +1,20 @@
 .feedback {
-  padding-top: 26px;
+  position: relative;
+  padding-top: 10px;
   text-align: center;
+  margin-bottom: 64px;
+
+  @media #{$desktop-widths} {
+    padding: 161px 130px 0;
+    margin-bottom: 100px;
+
+    &::before {
+      position: absolute;
+      top: 72px;
+      left: 564px;
+      content: url("../img/icon-quotes.svg");
+    }
+  }
 }
 
 .feedback__list {
@@ -9,6 +23,7 @@
   color: #1d2631;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 6px;
 }
 
 .feedback__item {
@@ -22,15 +37,32 @@
   padding: 0 20px;
   font-weight: 700;
   order: -1;
+  font-size: 18px;
 
   @media #{$tablet-widths} {
     order: 0;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 24px;
   }
 }
 
 .feedback__message {
   margin: 0 0 10px;
-  padding: 0 15px;
+  padding: 10px 20px;
+  line-height: 30px;
+
+  @media #{$tablet-widths} {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 10px 80px;
+  }
 }
 
 .feedback__user-info {
@@ -38,6 +70,42 @@
   margin: 0;
 
   @media #{$tablet-widths} {
+    margin-bottom: 28px;
     display: block;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 18px;
+  }
+}
+
+.feedback__toggles {
+  @media #{$desktop-widths} {
+    display: none;
+  }
+}
+
+.feedback__button {
+  position: absolute;
+  display: none;
+
+  @media #{$desktop-widths} {
+    display: inline-block;
+    border: none;
+    width: 22px;
+    height: 41px;
+    font-size: 0;
+
+    &--prev {
+      background: url("../img/icon-review-arrow-left.svg");
+      left: 130px;
+      top: 213px;
+    }
+
+    &--next {
+      background: url("../img/icon-review-arrow-right.svg");
+      right: 130px;
+      top: 213px;
+    }
   }
 }

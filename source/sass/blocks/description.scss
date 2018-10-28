@@ -1,15 +1,41 @@
 .description {
+  position: relative;
   padding-top: 20px;
   min-height: 217px;
   text-align: center;
   background-color: $bg-color;
 
   @media #{$tablet-widths} {
-    padding-top: 40px;
+    padding-top: 47px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 20px;
+  }
+
+  svg {
+    display: none;
+
+    @media #{$tablet-widths} {
+      display: block;
+      z-index: 0;
+      position: absolute;
+      top: 225px;
+      left: 0;
+      width: 125%;
+      height: auto;
+    }
+
+    @media #{$desktop-widths} {
+      top: 206px;
+      width: 202%;
+    }
   }
 }
 
 .description__message {
+  position: relative;
+  z-index: 2;
   color: #283645;
   font-size: 24px;
   line-height: 32px;
@@ -17,38 +43,101 @@
   margin: 20px 0;
 
   @media #{$tablet-widths} {
+    font-size: 40px;
+    line-height: 48px;
     margin: 0;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 50px;
+    margin: 20px 0;
+    line-height: 62px;
+  }
+
+  &--first {
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      display: block;
+      height: 217px;
+      width: 100%;
+      top: -40px;
+      right: 0;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      display: block;
+      top: -38px;
+      left: 0;
+      height: 0;
+      width: 0;
+      border: 32px solid transparent;
+      border-left: 319px solid #ffffff;
+      border-top: 216px solid #ffffff;
+
+      @media #{$tablet-widths} {
+        display: none;
+      }
+    }
+
+    @media #{$desktop-widths} {
+      margin-bottom: 28px;
+    }
+  }
+
+  &--second {
+    @media #{$desktop-widths} {
+      margin-top: -28px;
+      padding-left: 8px;
+    }
   }
 }
 
 .description__list {
-  padding: 40px 0 320px;
+  padding: 81px 0 320px;
+  padding-bottom: 303px;
   list-style: none;
   color: #1d2631;
   font-size: 14px;
   line-height: 18px;
 
   @media #{$tablet-widths} {
-    padding: 180px 0 40px 320px;
+    padding: 96px 0 35px 331px;
     text-align: left;
   }
 
   @media #{$desktop-widths} {
     display: flex;
-    padding: 0 0 40px;
+    padding: 52px 125px 0 100px;
     font-size: 18px;
+    margin-bottom: 0;
+    padding-bottom: 18px;
   }
 }
 
 .description__item {
   &:nth-child(1) {
+    margin-bottom: 26px;
+
     @media #{$desktop-widths} {
       background: url("../img/iphone-screen-1-desktop@1x.png") center top no-repeat;
     }
   }
 
   &:nth-child(2) {
+    margin-bottom: 24px;
+
+    @media #{$tablet-widths} {
+      margin-bottom: 31px;
+    }
+
     @media #{$desktop-widths} {
+      margin-left: -25px;
       background: url("../img/iphone-screen-2-desktop@1x.png") center top no-repeat;
     }
   }
@@ -61,8 +150,8 @@
 
   @media #{$desktop-widths} {
     padding-top: 360px;
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
   }
 }
@@ -72,20 +161,25 @@
   padding: 0 20px;
   font-weight: 700;
   line-height: 26px;
+  font-size: 18px;
 
   @media #{$tablet-widths} {
     padding-left: 0;
   }
+
+  @media #{$desktop-widths} {
+    font-size: 30px;
+    margin: 0;
+    padding: 0 40px;
+    line-height: 28px;
+    margin-bottom: 28px;
+  }
 }
 
 .description__text {
-  margin: 0 0 45px;
-  padding: 0 34px;
+  margin: 0 0 20px;
+  padding: 0 25px;
   line-height: 26px;
-
-  &:last-child {
-    margin-bottom: 10px;
-  }
 
   @media #{$tablet-widths} {
     padding-left: 0;
@@ -93,13 +187,38 @@
   }
 
   @media #{$desktop-widths} {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 54px;
+    margin: 0 0 15px;
+  }
+
+  &--last {
+    margin-bottom: 10px;
+
+    @media #{$desktop-widths} {
+      padding: 0 35px;
+    }
+  }
+
+  br {
+    display: none;
+
+    @media #{$tablet-widths} {
+      display: block;
+    }
+
+    @media #{$desktop-widths} {
+      display: none;
+    }
   }
 }
 
 .description__bg {
   background: url("../img/iphone-screen-mobile@1x.png") center bottom no-repeat;
-  background-position-y: 111%;
+  background-position-y: 109%;
+  z-index: 200;
+  position: relative;
 
   @media #{$tablet-widths} {
     background: url("../img/iphone-screen-3-tablet@1x.png") center bottom no-repeat;
