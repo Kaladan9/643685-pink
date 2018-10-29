@@ -1,7 +1,5 @@
 .page-main {
-  @include container();
-  margin-top: -66px;
-  overflow: hidden;
+  width: 100%;
   display: block;
 
   @media #{$tablet-widths} {

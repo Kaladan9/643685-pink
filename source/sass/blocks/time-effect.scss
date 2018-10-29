@@ -1,13 +1,13 @@
 .time-effect {
   position: relative;
   display: none;
-  padding-top: 39px;
+  padding-top: 57px;
   padding-bottom: 64px;
 
   &::after {
     content: "24";
     position: absolute;
-    top: 35%;
+    top: 39%;
     left: 21%;
     font-size: 96px;
     font-weight: 700;

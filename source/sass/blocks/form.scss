@@ -1,4 +1,5 @@
 .form {
+  @include container();
   display: flex;
   flex-direction: column;
   color: #283645;

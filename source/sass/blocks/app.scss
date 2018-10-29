@@ -1,10 +1,22 @@
 .app {
   background-color: #1d2631;
+
+  @media #{$tablet-widths} {
+    background-color: transparent;
+  }
+
+  @media #{$desktop-widths} {
+    background-color: transparent;
+  }
+}
+
+.app__container {
+  margin: 0 auto;
   text-align: center;
   padding: 0 20px;
   z-index: 10;
   min-height: 272px;
-  max-width: 320px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -12,14 +24,12 @@
   @media #{$tablet-widths} {
     padding-top: 203px;
     min-width: 300px;
-    background-color: transparent;
   }
 
   @media #{$desktop-widths} {
     padding-left: 130px;
     padding-top: 218px;
     min-width: 300px;
-    background-color: transparent;
   }
 }
 
@@ -102,8 +112,7 @@
   color: #ffffff;
   font-size: 13px;
   line-height: 24px;
-  margin: 0;
-  margin-top: 3px;
+  margin: -2px 0 0;
 
   @media #{$tablet-widths} {
     font-size: 17px;

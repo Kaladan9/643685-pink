@@ -1,3 +1,7 @@
+.contacts__container {
+  @include container();
+}
+
 .contacts__list {
   padding: 0;
   list-style: none;
@@ -21,13 +25,13 @@
 
   &:nth-child(1) {
     @media #{$tablet-widths} {
-      margin-left: -7px;
+      margin-left: 7px;
     }
   }
 
   &:nth-child(2) {
     @media #{$tablet-widths} {
-      margin-right: -8px;
+      margin-right: 6px;
       line-height: 25px;
     }
 
@@ -55,7 +59,7 @@
   font-weight: 700;
 
   @media #{$tablet-widths} {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media #{$desktop-widths} {

@@ -1,12 +1,11 @@
 .description {
   position: relative;
-  padding-top: 20px;
   min-height: 217px;
   text-align: center;
   background-color: $bg-color;
 
   @media #{$tablet-widths} {
-    padding-top: 47px;
+
   }
 
   @media #{$desktop-widths} {
@@ -14,7 +13,8 @@
   }
 
   svg {
-    display: none;
+    width: 100%;
+    height: 25px;
 
     @media #{$tablet-widths} {
       display: block;
@@ -22,15 +22,25 @@
       position: absolute;
       top: 225px;
       left: 0;
-      width: 125%;
-      height: 65px;
     }
 
     @media #{$desktop-widths} {
       top: 206px;
-      width: 202%;
-      height: 191px;
     }
+  }
+}
+
+.description__container {
+  @include container();
+}
+
+.description__message-box {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 0;
+
+  @media #{$tablet-widths} {
+    padding: 48px 0 0;
   }
 }
 
@@ -39,14 +49,16 @@
   z-index: 2;
   color: #283645;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 29px;
   font-weight: 300;
-  margin: 20px 0;
+  margin: 20px auto;
+  width: 320px;
 
   @media #{$tablet-widths} {
     font-size: 40px;
     line-height: 48px;
-    margin: 0;
+    margin: 0 auto;
+    width: 620px;
   }
 
   @media #{$desktop-widths} {
@@ -56,34 +68,10 @@
   }
 
   &--first {
-    &::before {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      display: block;
-      height: 217px;
-      width: 100%;
-      top: -40px;
-      right: 0;
-      background-color: #ffffff;
-    }
+    margin-bottom: 27px;
 
-    &::after {
-      z-index: -1;
-      content: "";
-      position: absolute;
-      display: block;
-      top: -38px;
-      left: 0;
-      height: 0;
-      width: 0;
-      border: 32px solid transparent;
-      border-left: 319px solid #ffffff;
-      border-top: 216px solid #ffffff;
-
-      @media #{$tablet-widths} {
-        display: none;
-      }
+    @media #{$tablet-widths} {
+      margin-bottom: 0;
     }
 
     @media #{$desktop-widths} {
@@ -100,15 +88,15 @@
 }
 
 .description__list {
-  padding: 81px 0 320px;
-  padding-bottom: 303px;
+  margin: 0;
+  padding: 35px 0 308px;
   list-style: none;
   color: #1d2631;
   font-size: 14px;
   line-height: 18px;
 
   @media #{$tablet-widths} {
-    padding: 96px 0 35px 331px;
+    padding: 114px 0 35px 331px;
     text-align: left;
   }
 
@@ -123,7 +111,7 @@
 
 .description__item {
   &:nth-child(1) {
-    margin-bottom: 26px;
+    margin-bottom: 32px;
 
     @media #{$desktop-widths} {
       background: url("../img/iphone-screen-1-desktop@1x.png") center top no-repeat;
@@ -136,7 +124,7 @@
   }
 
   &:nth-child(2) {
-    margin-bottom: 24px;
+    margin-bottom: 31px;
 
     @media #{$tablet-widths} {
       margin-bottom: 31px;
@@ -195,7 +183,7 @@
 .description__text {
   margin: 0 0 20px;
   padding: 0 25px;
-  line-height: 26px;
+  line-height: 24px;
 
   @media #{$tablet-widths} {
     padding-left: 0;
@@ -232,13 +220,13 @@
 
 .description__bg {
   background: url("../img/iphone-screen-mobile@1x.png") center bottom no-repeat;
-  background-position-y: 109%;
+  background-position-y: 110%;
   z-index: 200;
   position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/iphone-screen-mobile@2x.png") center bottom no-repeat;
-    background-position-y: 109%;
+    background-position-y: 110%;
     background-size: 49%;
   }
 

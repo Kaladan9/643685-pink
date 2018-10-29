@@ -1,13 +1,15 @@
 .preview {
   width: 100%;
-  min-height: 462px;
+  min-height: 398px;
   z-index: 1;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../img/bg-back-mobile@1x.jpg") center top no-repeat;
+  background-size: cover;
 
   @media #{$tablet-widths} {
+    background: transparent;
     order: 2;
     min-height: 730px;
   }
@@ -27,6 +29,24 @@
     @media #{$desktop-widths} {
       min-height: 394px;
       padding: 0 130px;
+    }
+  }
+
+  &--bg {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 258px;
+      height: 286px;
+      background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
+      background-size: 258px 286px;
+
+      @media #{$tablet-widths} {
+        display: none;
+      }
     }
   }
 }
