@@ -4,10 +4,6 @@
   text-align: center;
   background-color: $bg-color;
 
-  @media #{$tablet-widths} {
-
-  }
-
   @media #{$desktop-widths} {
     padding-top: 20px;
   }
