@@ -5,8 +5,18 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  background: url("../img/bg-back-mobile@1x.jpg") center top no-repeat;
-  background-size: cover;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-y: -70px;
+    background-size: 720px auto;
+  }
 
   @media #{$tablet-widths} {
     background: transparent;
@@ -14,16 +24,18 @@
     min-height: 730px;
   }
 
-  @media #{$desktop-widths} {
-    min-height: 853px;
+  &--desktop-hidden {
+    @media #{$desktop-widths} {
+      display: none;
+    }
   }
 
   &--short {
     height: 0; //for align-items: center on IE11
-    min-height: 235px;
+    min-height: 174px;
 
     @media #{$tablet-widths} {
-      min-height: 439px;
+      min-height: 373px;
     }
 
     @media #{$desktop-widths} {
@@ -32,21 +44,40 @@
     }
   }
 
-  &--bg {
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      width: 258px;
-      height: 286px;
-      background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
-      background-size: 258px 286px;
+  &--padding-bottom {
+    padding-bottom: 66px;
+    background-position-y: -18px;
 
-      @media #{$tablet-widths} {
-        display: none;
-      }
+    @media #{$tablet-widths} {
+      padding-bottom: 0;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-position-y: -4px;
+    }
+  }
+}
+
+.preview--bg {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 258px;
+    height: 286px;
+    background: url("../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
+    background-size: 258px 286px;
+
+    @media #{$tablet-widths} {
+      display: none;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/iphone-hand-mobile@2x.png") left bottom no-repeat;
+      background-size: 258px 286px;
+      bottom: 0;
     }
   }
 }

@@ -1,4 +1,5 @@
 .page-popup {
+  z-index: 999999;
   position: fixed;
   top: 25%;
   left: 50%;
@@ -10,6 +11,7 @@
   margin: 0 auto;
   overflow-x: hidden;
   background-color: white;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
 
   @media #{$tablet-widths} {
     width: 460px;

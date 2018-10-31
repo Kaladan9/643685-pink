@@ -13,6 +13,7 @@
   }
 
   @media #{$desktop-widths} {
+    padding-top: 26px;
     margin-bottom: 60px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,7 +35,7 @@
   }
 
   @media #{$desktop-widths} {
-    margin: 0 130px 50px;
+    margin: 0 10px 50px;
   }
 
   &--white {
@@ -518,7 +519,7 @@
   }
 
   @media #{$desktop-widths} {
-    margin-left: 130px;
     font-size: 18px;
+    margin-left: 10px;
   }
 }

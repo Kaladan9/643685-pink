@@ -12,10 +12,10 @@
 
 <header class="page-header">
   <div class="page-header__container">
-    <div class="page-header__wrapper wrapper">
+    <div class="page-header__wrapper">
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
           <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
         </picture>
@@ -48,11 +48,11 @@
   </div>
 </header>
 
-<main class="page-main">
+<main class="page-main page-main--padding-top">
 
-  <section class="page-main__intro intro">
+  <section class="page-main__intro intro intro--short">
     <div class="page-main__preview preview preview--short">
-      <h1 class="page-main__slogan page-main__slogan--small-margin-top">Фотографии пользователей</h1>
+      <h1 class="page-main__slogan page-main__slogan--desktop-padding">Фотографии пользователей</h1>
     </div>
   </section>
 
@@ -62,15 +62,20 @@
   </h2>
 
   <section class="photos wrapper">
+    <h3 class="visually-hidden">Фотографии пользователей</h3>
     <ul class="photos__list">
 
       <li class="photos__item photos__item--panorama">
-        <a class="photos__link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="photos__img photos__img--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
-          </picture>
+        <a class="photos__link photos__link--panorama" href="#">
+          <div class="photos__panorama-container">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photos__img photos__img--panorama" src="img/panorama-mobile@1x.jpg"
+                srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+            </picture>
+          </div>
         </a>
         <div class="photos__user-info">
           <b class="photos__user-name">Анна</b>
@@ -89,9 +94,11 @@
       <li class="photos__item">
         <a class="photos__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-            <img class="photos__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
+            <img class="photos__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+              alt="Фото пользователя">
           </picture>
         </a>
         <div class="photos__user-info">
@@ -100,7 +107,8 @@
         </div>
         <p class="photos__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
         <div class="photos__social">
-          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg"  width="13" height="12" alt="like">
+          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12"
+            alt="like">
           <p class="photos__count">Нравится: 356</p>
         </div>
       </li>
@@ -108,9 +116,12 @@
       <li class="photos__item">
         <a class="photos__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-            <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+            <img class="photos__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x"
+              alt="Фото пользователя">
           </picture>
         </a>
         <div class="photos__user-info">
@@ -119,7 +130,8 @@
         </div>
         <p class="photos__comment">Соседи будут рады!</p>
         <div class="photos__social">
-          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12" alt="like">
+          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12"
+            alt="like">
           <p class="photos__count">Нравится: 666</p>
         </div>
       </li>
@@ -127,9 +139,12 @@
       <li class="photos__item">
         <a class="photos__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-            <img class="photos__img photos__like--margin-left-auto" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+            <img class="photos__img" src="img/photo-window-mobile@1x.jpg"
+              srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
           </picture>
         </a>
         <div class="photos__user-info">
@@ -138,7 +153,8 @@
         </div>
         <p class="photos__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
         <div class="photos__social">
-          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12" alt="like">
+          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12"
+            alt="like">
           <p class="photos__count">Нравится: 215</p>
         </div>
       </li>
@@ -146,9 +162,12 @@
       <li class="photos__item">
         <a class="photos__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-            <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+            <img class="photos__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+              alt="Фото пользователя">
           </picture>
         </a>
         <div class="photos__user-info">
@@ -157,7 +176,8 @@
         </div>
         <p class="photos__comment">Самая кубанская в мире!</p>
         <div class="photos__social">
-          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12" alt="like">
+          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12"
+            alt="like">
           <p class="photos__count">Нравится: 4</p>
         </div>
       </li>
@@ -165,9 +185,11 @@
       <li class="photos__item">
         <a class="photos__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-            <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
+            <img class="photos__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+              alt="Фото пользователя">
           </picture>
         </a>
         <div class="photos__user-info">
@@ -176,7 +198,8 @@
         </div>
         <p class="photos__comment photos__comment--big-margin-bottom">Где снег-то?</p>
         <div class="photos__social">
-          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12" alt="like">
+          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12"
+            alt="like">
           <p class="photos__count">Нравится: 150</p>
         </div>
       </li>
@@ -184,9 +207,12 @@
       <li class="photos__item">
         <a class="photos__link" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-            <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+            <img class="photos__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+              alt="Фото пользователя">
           </picture>
         </a>
         <div class="photos__user-info">
@@ -195,7 +221,8 @@
         </div>
         <p class="photos__comment photos__comment--big-margin-bottom">Всем GM и взаимные лайки!</p>
         <div class="photos__social">
-          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12" alt="like">
+          <img class="photos__like photos__like--margin-left-auto" src="img/icon-heart.svg" width="13" height="12"
+            alt="like">
           <p class="photos__count">Нравится: 2560</p>
         </div>
       </li>
@@ -212,9 +239,10 @@
 
     <div class="wrapper user-photo__content">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+        <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
         <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-        <img class="user-photo__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
+        <img class="user-photo__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+          alt="Фото пользователя">
       </picture>
 
       <div class="user-photo__tools tools">
@@ -254,14 +282,17 @@
   <div class="page-footer__reference reference wrapper">
 
     <a class="page-footer__link" href="#">
-      <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" alt="Pink" width="147" height="40">
+      <picture>
+        <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+      </picture>
     </a>
 
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
                 <g>
                   <path fill="#d22856" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z">
@@ -273,7 +304,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--facebook" href="#">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path fill="#d22856" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z">
               </path>
             </svg>
@@ -281,7 +312,7 @@
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path fill="#d22856" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z">
               </path>
             </svg>
@@ -299,5 +330,6 @@
   </div>
 </footer>
 
+<script src="js/picturefill.min.js"></script>
 </body>
 </html>

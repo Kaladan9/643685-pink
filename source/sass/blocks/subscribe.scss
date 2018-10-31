@@ -1,45 +1,19 @@
 .subscribe {
   position: relative;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat 50% 0;
+  background-size: 100%;
+  overflow: hidden;
   padding-top: 88px;
   padding-bottom: 41px;
   background-color: $bg-color;
-  overflow-x: hidden;
-
-  &::after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    display: block;
-    top: -28px;
-    left: -35px;
-    height: 0;
-    width: 0;
-    border: 25px solid transparent;
-    border-right: 334px solid #f2f2f2;
-    border-bottom: 57px solid #f2f2f2;
-
-    @media #{$tablet-widths} {
-      top: -52px;
-      left: -35px;
-      border: 53px solid transparent;
-      border-right: 674px solid #f2f2f2;
-    }
-
-    @media #{$desktop-widths} {
-      top: -82px;
-      left: -154px;
-      border: 87px solid transparent;
-      border-right: 1282px solid #f2f2f2;
-    }
-  }
 
   @media #{$tablet-widths} {
-    padding-top: 64px;
+    padding-top: 86px;
     padding-bottom: 36px;
   }
 
   @media #{$desktop-widths} {
-    padding-top: 65px;
+    padding-top: 156px;
     padding-bottom: 61px;
   }
 }
@@ -58,11 +32,13 @@
   align-items: flex-end;
 
   @media #{$tablet-widths} {
+    max-width: 620px;
     margin-left: 20px;
   }
 
   @media #{$desktop-widths} {
-    margin-left: 130px;
+    max-width: 940px;
+    margin-left: 10px;
   }
 }
 

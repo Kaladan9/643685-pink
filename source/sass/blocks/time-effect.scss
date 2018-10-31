@@ -4,6 +4,21 @@
   padding-top: 57px;
   padding-bottom: 64px;
 
+  @media #{$tablet-widths} {
+    display: block;
+  }
+
+  @media #{$desktop-widths} {
+    padding-top: 0;
+    background-color: $bg-color;
+    padding-bottom: 67px;
+  }
+}
+
+.time-effect__container {
+  display: flex;
+  position: relative;
+
   &::after {
     content: "24";
     position: absolute;
@@ -15,20 +30,10 @@
     transform: translate(-50%);
 
     @media #{$desktop-widths} {
-      top: 29%;
-      left: 23%;
+      top: 118px;
+      left: 158px;
       font-size: 120px;
     }
-  }
-
-  @media #{$tablet-widths} {
-    display: flex;
-  }
-
-  @media #{$desktop-widths} {
-    padding-top: 0;
-    background-color: $bg-color;
-    padding-bottom: 67px;
   }
 }
 
@@ -61,7 +66,7 @@
   margin-bottom: 0;
 
   @media #{$desktop-widths} {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   br {

@@ -56,7 +56,7 @@ gulp.task("html:update", ["html:copy"], function(done) {
 gulp.task("images", function() {
   const img = gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.optipng({optimizationLevel: 2}),
       imagemin.jpegtran({progressive: true})
     ]))
     .pipe(gulp.dest("build/img"));
@@ -73,6 +73,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "./source/fonts/**/*.{woff,woff2}",
     "./source/img/**",
+    "./source/js/**",
     "./source/*.html"
   ], {
     base: "source"

@@ -1,5 +1,6 @@
 .contacts__container {
   @include container();
+  overflow: hidden;
 }
 
 .contacts__list {
@@ -8,6 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
 
   @media #{$tablet-widths} {
     justify-content: space-around;

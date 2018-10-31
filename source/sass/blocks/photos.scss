@@ -3,7 +3,7 @@
   padding-top: 29px;
 
   @media #{$desktop-widths} {
-    padding-top: 12px;
+    padding-top: 32px;
   }
 }
 
@@ -56,6 +56,7 @@
     position: relative;
 
     &::before {
+      z-index: 1;
       position: absolute;
       top: 0;
       right: 0;
@@ -88,6 +89,37 @@
 
 .photos__link {
   margin-bottom: 13px;
+
+  &--panorama {
+    width: 100%;
+    display: block;
+  }
+}
+
+.photos__panorama-container {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 137px;
+  overflow-x: hidden;
+
+  @media #{$tablet-widths} {
+    width: 106vw;
+    margin-left: -53vw;
+    margin-right: -53vw;
+    height: 509px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 125vw;
+    margin-left: -62.5vw;
+    margin-right: -62.5vw;
+  }
 }
 
 .photos__img {
@@ -100,17 +132,15 @@
   }
 
   &--panorama {
-    width: auto;
-    margin-left: -20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
     @media #{$tablet-widths} {
-      width: 660px;
-      height: 510px;
+      height: 509px;
     }
 
     @media #{$desktop-widths} {
-      margin-left: -130px;
-      width: 1200px;
       height: 506px;
     }
   }

@@ -1,3 +1,9 @@
+.slider {
+  @media #{$desktop-widths} {
+    position: relative;
+  }
+}
+
 .slider__toggles {
   display: flex;
   justify-content: center;

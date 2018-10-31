@@ -11,7 +11,7 @@
 
   @media #{$desktop-widths} {
     margin: 23px 0;
-    margin-right: 130px;
+    margin-right: 10px;
     font-size: 14px;
   }
 
@@ -24,8 +24,8 @@
       display: inline-block;
     }
   }
+}
 
-  &--red {
-    color: #d8456d;
-  }
+.hint__span--red {
+  color: #d8456d;
 }

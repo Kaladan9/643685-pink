@@ -1,6 +1,17 @@
 .page-header {
   width: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 0;
   background-color: #283645;
+
+  &--transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media #{$desktop-widths} {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__container {
@@ -8,28 +19,28 @@
   z-index: 10;
 
   @media #{$desktop-widths} {
-    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
 .page-header__wrapper {
   position: relative;
   display: flex;
-  padding-top: 21px;
-  padding-bottom: 23px;
-  background-color: #283645;
+  padding: 21px 20px 23px;
 
   @media #{$tablet-widths} {
-    padding-top: 27px;
-    padding-bottom: 43px;
+    padding: 27px 20px 43px;
   }
 
   @media #{$desktop-widths} {
     margin: 0;
+    padding-left: 0;
     min-width: 0;
     background-color: transparent;
     border: none;
+    width: auto;
   }
 }
 
