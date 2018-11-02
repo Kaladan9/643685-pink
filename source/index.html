@@ -2,9 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -208,7 +211,7 @@
         <button type="button" class="feedback__button feedback__button--prev">Назад</button>
         <button type="button" class="feedback__button feedback__button--next">Вперед</button>
 
-        <div class="feedback__toggles slider__toggles">
+        <div class="slider__toggles">
           <button class="slider__toggle slider__toggle--active">1</button>
           <button class="slider__toggle">2</button>
           <button class="slider__toggle">3</button>
@@ -219,7 +222,7 @@
 
   <section class="subscribe">
     <div class="subscribe__container">
-      <div class="slidder">
+      <div class="slider">
         <h2 class="visually-hidden">Подписка</h2>
 
         <ul class="subscribe__list">
@@ -304,7 +307,7 @@
           </li>
         </ul>
 
-        <div class="subscribe__toggles slider__toggles">
+        <div class="slider__toggles slider__toggles--tablet-display-none">
           <button class="slider__toggle">1</button>
           <button class="slider__toggle slider__toggle--active">2</button>
           <button class="slider__toggle">3</button>

@@ -2,9 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -90,32 +93,32 @@
       <p class="form__text">Ваши безбашенные достижения в путешествии</p>
 
       <label class="form__label form__label--black form__label--big form__label--check" for="selfie">
-        <input type="checkbox" name="selfie" id="selfie" class="form__input form__input--checkbox" checked>
+        <input type="checkbox" name="selfie" id="selfie" class="form__input form__input--checkbox" checked tabindex="0">
         <span class="form__checkmark"></span>
         Сделал селфи с акулой
       </label>
       <label class="form__label form__label--black form__label--big form__label--check" for="beach">
-        <input type="checkbox" name="beach" id="beach" class="form__input form__input--checkbox" checked>
+        <input type="checkbox" name="beach" id="beach" class="form__input form__input--checkbox" checked tabindex="0">
         <span class="form__checkmark"></span>
         Обгорел на пляже
       </label>
       <label class="form__label form__label--black form__label--big form__label--check" for="chuck">
-        <input type="checkbox" name="chuck" id="chuck" class="form__input form__input--checkbox">
+        <input type="checkbox" name="chuck" id="chuck" class="form__input form__input--checkbox" tabindex="0">
         <span class="form__checkmark"></span>
         Видел Чака Норриса
       </label>
       <label class="form__label form__label--black form__label--big form__label--check" for="souvenirs">
-        <input type="checkbox" name="souvenirs" id="souvenirs" class="form__input form__input--checkbox">
+        <input type="checkbox" name="souvenirs" id="souvenirs" class="form__input form__input--checkbox" tabindex="0">
         <span class="form__checkmark"></span>
         Накупил сувениров
       </label>
       <label class="form__label form__label--black form__label--big form__label--check" for="tower">
-        <input type="checkbox" name="tower" id="tower" class="form__input form__input--checkbox" checked>
+        <input type="checkbox" name="tower" id="tower" class="form__input form__input--checkbox" checked tabindex="0">
         <span class="form__checkmark"></span>
         Удержал башню
       </label>
       <label class="form__label form__label--black form__label--big form__label--check" for="hotel">
-        <input type="checkbox" name="hotel" id="hotel" class="form__input form__input--checkbox">
+        <input type="checkbox" name="hotel" id="hotel" class="form__input form__input--checkbox" tabindex="0">
         <span class="form__checkmark"></span>
         Разгромил отель
       </label>
@@ -139,17 +142,17 @@
     form__wrapper form__fieldset--half-width">
       <p class="form__text">С каким приложением путешествовали?</p>
       <label class="form__label form__label--black form__label--big form__label--radio" for="ios">
-        <input type="radio" name="app" id="ios" class="form__input form__input--radio" checked>
+        <input type="radio" name="app" id="ios" class="form__input form__input--radio" checked tabindex="0">
         <span class="form__radiomark"></span>
         Pink для iOS
       </label>
       <label class="form__label form__label--black form__label--big form__label--radio" for="android">
-        <input type="radio" name="app" id="android" class="form__input form__input--radio">
+        <input type="radio" name="app" id="android" class="form__input form__input--radio" tabindex="0">
         <span class="form__radiomark"></span>
         Pink на Android
       </label>
       <label class="form__label form__label--black form__label--big form__label--radio" for="windows">
-        <input type="radio" name="app" id="windows" class="form__input form__input--radio">
+        <input type="radio" name="app" id="windows" class="form__input form__input--radio" tabindex="0">
         <span class="form__radiomark"></span>
         Windows Phone
       </label>
@@ -166,7 +169,7 @@
     <button type="submit" class="form__send button button--square button--green">Отправить форму</button>
 
     <p class="form__hint hint">
-      <span class="hint__span--red">*</span>
+      <span class="hint__span hint__span--red">*</span>
       — обязательные <mark>для заполнения</mark> поля
     </p>
   </form>

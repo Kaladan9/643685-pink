@@ -101,12 +101,6 @@
   }
 }
 
-.feedback__toggles {
-  @media #{$desktop-widths} {
-    display: none;
-  }
-}
-
 .feedback__button {
   position: absolute;
   display: none;

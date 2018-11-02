@@ -9,6 +9,7 @@ const gulp         = require("gulp"),
       minify       = require("gulp-csso"),
       rename       = require("gulp-rename"),
       imagemin     = require("gulp-imagemin"),
+      webp         = require("gulp-webp"),
       svgmin       = require("gulp-svgmin"),
       run          = require("run-sequence"),
       del          = require("del");
@@ -65,8 +66,14 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"));
+});
+
 gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "images", fn);
+  run("clean", "copy", "style", "images", "webp", fn);
 });
 
 gulp.task("copy", function() {

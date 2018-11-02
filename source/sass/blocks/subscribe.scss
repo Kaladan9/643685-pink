@@ -156,15 +156,3 @@
     font-size: 24px;
   }
 }
-
-.subscribe__toggles {
-  text-align: center;
-
-  @media #{$tablet-widths} {
-    display: none;
-  }
-
-  @media #{$desktop-widths} {
-    display: none;
-  }
-}

@@ -15,6 +15,12 @@
   @media #{$desktop-widths} {
     display: none;
   }
+
+  &--tablet-display-none{
+    @media #{$tablet-widths} {
+      display: none;
+    }
+  }
 }
 
 .slider__toggle {
