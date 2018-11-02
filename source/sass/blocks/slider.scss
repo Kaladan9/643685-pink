@@ -16,7 +16,7 @@
     display: none;
   }
 
-  &--tablet-display-none{
+  &--tablet-display-none {
     @media #{$tablet-widths} {
       display: none;
     }
